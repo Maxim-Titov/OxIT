@@ -1,0 +1,97 @@
+.reg-course {
+    width: 1220px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.reg-course .right, .reg-course .left {
+    width: 50%;
+}
+
+.reg-course .right a {
+    color: #7090c4;
+}
+
+.reg-course .right {
+    text-align: center;
+}
+
+.reg-course .right .form {
+    text-align: left;
+}
+
+.reg-course .right .form img {
+    width: 10px;
+}
+
+.reg-course .left-head {
+    font-weight: 500;
+}
+
+.reg-course .right-head {
+    font-weight: 500;
+}
+
+#name, #surname, #qa, #phone, #email {
+    height: 3lh;
+    width: 650px;
+}
+
+#name:focus, #surname:focus, #qa:focus, #phone:focus, #email:focus {
+    outline-color: #6fade9;
+}
+
+#name, #surname, #qa, #phone, #email, #agree {
+    margin-bottom: 15px;
+}
+
+.submit {
+    background-color: #3d78b7;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 100px;
+    color: white;
+}
+
+.reg-course .left .content {
+    width: 90%;
+    margin-top: 40%;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 768px) {
+    .reg-course {
+        width: 100%;
+        padding: 0;
+        display: block;
+        justify-content: none;
+    }
+
+    .reg-course .right, .reg-course .left {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #name, #surname, #qa, #phone, #email {
+        height: 3lh;
+        width: 95%;
+    }
+
+    .reg-course .right .form h2 {
+        text-align: center;
+    }
+    
+    .submit {
+        width: 75%;
+        padding: 15px 25px;
+    }
+
+    .reg-course .left .content {
+        margin-top: 0;
+        margin: 0 auto;
+    }
+}
