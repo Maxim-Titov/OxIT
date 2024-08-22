@@ -49,18 +49,17 @@
 
 @media(max-width: 500px) {
     .call-to-action {
-        height: 320px;
+        height: 225px;
     }
 
     .call-to-action .content {
-        display: none;   
+        display: none;
     }
 
     .call-to-action .content-table {
         display: block;
         text-align: center;
-        padding-left: 75px;
-        padding-right: 75px;
+        padding: 25px 70px;
     }
 
     .call-to-action .content-table td {
@@ -69,6 +68,7 @@
 
     .call-to-action .content-table td img {
         margin: 0;
+        width: 35px;
     }
 
     .call-to-action .content-table td p {
@@ -81,7 +81,7 @@
 
 @media(max-width: 320px) {
     .call-to-action {
-        height: 320px;
+        height: 225px;
     }
 
     .call-to-action .content {
@@ -100,6 +100,7 @@
 
     .call-to-action .content-table td img {
         margin: 0;
+        width: 35px;
     }
 
     .call-to-action .content-table td p {

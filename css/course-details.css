@@ -45,7 +45,7 @@
 
 @media(max-width: 500px) {
     .course-details {
-        height: 320px;
+        height: 300px;
     }
 
     .course-details .content {
@@ -64,6 +64,8 @@
 
     .course-details .content-table td img {
         margin: 0;
+        width: 64px;
+        height: 64px;
     }
 
     .course-details .content-table td p {
