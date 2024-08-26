@@ -1,451 +1,425 @@
 <!DOCTYPE html>
 <html lang="ua">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>OxIT</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OxIT</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/reg-course.css">
-	<link rel="stylesheet" type="text/css" href="css/elements.css">
-	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/course.css">
-	<link rel="stylesheet" type="text/css" href="css/course-details.css">
-	<link rel="stylesheet" type="text/css" href="css/testimonials.css">
-	<link rel="stylesheet" type="text/css" href="css/video.css">
-	<link rel="stylesheet" type="text/css" href="css/mentors.css">
-	<link rel="stylesheet" type="text/css" href="css/map.css">
-	<link rel="stylesheet" type="text/css" href="css/call-to-action.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-</head>
-<body>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/header.css">
+		<link rel="stylesheet" type="text/css" href="css/reg-course.css">
+		<link rel="stylesheet" type="text/css" href="css/elements.css">
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+		<link rel="stylesheet" type="text/css" href="css/course.css">
+		<link rel="stylesheet" type="text/css" href="css/course-details.css">
+		<link rel="stylesheet" type="text/css" href="css/testimonials.css">
+		<link rel="stylesheet" type="text/css" href="css/video.css">
+		<link rel="stylesheet" type="text/css" href="css/mentors.css">
+		<link rel="stylesheet" type="text/css" href="css/map.css">
+		<link rel="stylesheet" type="text/css" href="css/call-to-action.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
+	</head>
+	<body>
+		<header>
+			<div class="header">
+				<img src="images/logo_Oxit.png" alt="OxIT logo">
 
-    <script type="text/javascript">
-		$(document).ready(function(){
-			$('.slider').slick({
-				dots: true,
-				infinite: true,
-				fade: true,
-				autoplay: true,
-				autoplaySpeed: 10000
-			});
-		});
-
-		$(document).ready(function(){
-			$('.mentors-slider').slick({
-				dots: true,
-				infinite: true,
-				fade: true,
-				autoplay: true,
-				autoplaySpeed: 10000
-			});
-		});
-
-		$(document).ready(function(){
-			$('.about-mob').slick({
-				dots: true,
-				infinite: true,
-				fade: true,
-				autoplay: true,
-				autoplaySpeed: 10000
-			});
-		});
-	</script>
-
-	<header>
-		<div class="header">
-			<img src="images/logo_Oxit.png" alt="OxIT logo">
-
-			<div class="hamburger-menu">
-				<input id="menu__toggle" type="checkbox" />
-				<div class="button">
-					<label class="menu__btn" for="menu__toggle">
-						<span></span>
-					</label>
-				</div>
-				<ul class="menu__box">
-					<li><a href="" class="menu__item">Головна</a></li>
-					<li><a href="" class="menu__item">Програма курсу</a></li>
-					<li><a href="" class="menu__item">Відгуки про курс</a></li>
-					<li><a href="" class="menu__item">Відео</a></li>
-					<li><a href="" class="menu__item">Ментори</a></li>
-					<li class="statement"><a href="" class="menu__item">Подати заявку</a></li>
-				</ul>
-		  	</div>
-
-			<div class="menu">
-				<nav>
-					<ul>
-						<li><a href="">Головна</a></li>
-						<li><a href="">Програма курсу</a></li>
-						<li><a href="">Відгуки про курс</a></li>
-						<li><a href="">Відео</a></li>
-						<li><a href="">Ментори</a></li>
-						<li class="statement"><a href="">Подати заявку</a></li>
+				<div class="hamburger-menu">
+					<input id="menu__toggle" type="checkbox" />
+					<div class="button">
+						<label class="menu__btn" for="menu__toggle">
+							<span></span>
+						</label>
+					</div>
+					<ul class="menu__box">
+						<li><a href="" class="menu__item">Головна</a></li>
+						<li><a href="" class="menu__item">Програма курсу</a></li>
+						<li><a href="" class="menu__item">Відгуки про курс</a></li>
+						<li><a href="" class="menu__item">Відео</a></li>
+						<li><a href="" class="menu__item">Ментори</a></li>
+						<li class="statement"><a href="" class="menu__item">Подати заявку</a></li>
 					</ul>
-				</nav>
+				</div>
+
+				<div class="menu">
+					<nav>
+						<ul>
+							<li><a href="">Головна</a></li>
+							<li><a href="">Програма курсу</a></li>
+							<li><a href="">Відгуки про курс</a></li>
+							<li><a href="">Відео</a></li>
+							<li><a href="">Ментори</a></li>
+							<li class="statement"><a href="">Подати заявку</a></li>
+						</ul>
+					</nav>
+				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<section class="reg-course">
-		<div class="left">
-			<div class="content">
-				<h1 class="left-head">Курси програмування у Луцьку</h1>
-				<p>
-					Сфера ІТ розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ.
-					Існує лише - одна проблема брак дійсно кваліфікованих спеціалістів в Україні.
-					Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів.
-					ІТ школа ОхІТ створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати ІТ
-					спеціалістом. Чекаємо вас на нших курсах з
-					програмування в Луцьку. Старт наступного курсу 3 серпня.
-				</p>
-			</div>
-		</div>
-
-		<div class="right">
-			<div class="form">
-				<h2 class="right-head">Зареєструватися на курси</h2>
-
-				<label for="name">Ім'я <img src="images/icons/required.png" alt="required"></label>
-				<input type="text" name="name" id="name" placeholder="Ім'я" required><br/>
-				
-				<label for="surname">Прізвище <img src="images/icons/required.png" alt="required"></label>
-				<input type="text" name="surname" id="surname" placeholder="Прізвище" required><br/>
-
-				<label for="qa">Мене більше цікавить <img src="images/icons/required.png" alt="required"></label>
-				<input type="text" name="qa" id="qa" placeholder="developer or QA" required><br/>
-				
-				<label for="phone">Номер телефону <img src="images/icons/required.png" alt="required"></label>
-				<input type="number" name="phone" id="phone" placeholder="Номер телефону: +38 XXX XX XX XXX" required><br/>
-				
-				<label for="email">Email <img src="images/icons/required.png" alt="required"></label>
-				<input type="email" name="email" id="email" placeholder="Email" required><br/>
-
-				<input type="checkbox" name="agree" id="agree" required>
-				<label for="agree">
-					Я погоджуюся з <a href="#">Політикою Конфіденційності</a> <img src="images/icons/required.png" alt="required">
-				</label>
-			</div>
-
-			<br/>
-
-			<input type="button" value="ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ" class="submit">
-		</div>
-	</section>
-
-	<section class="course">
-		<h1>Курс "Розробка сайтів"</h1>
-
-		<div class="about-desk">
-			<div>
-				<img src="images/icons/course-icon-1.png" alt="WordPress icon">
-				<h2>Розробка сайтів на WordPress</h2>
-				
-				<hr class="line"/>
-
-				<p>
-					Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress,
-					навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.
-				</p>
-			</div>
-	
-			<div>
-				<img src="images/icons/course-icon-2.png" alt="Drupal icon">
-				<h2>Розробка сайтів на Drupal 8</h2>
-
-				<hr class="line"/>
-
-				<p>
-					Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою,
-					ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).
-				</p>
-			</div>
-	
-			<div>
-				<img src="images/icons/course-icon-3.png" alt="Testing icon">
-				<h2>Ознайомлення з тестуванням</h2>
-
-				<hr class="line"/>
-
-				<p>
-					Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.
-					Також А-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).
-				</p>
-			</div>
-		</div>
-
-		<div class="about-mob">
-			<div class="slick-slide">
-				<img src="images/icons/course-icon-1.png" alt="WordPress icon">
-				<h2>Розробка сайтів на WordPress</h2>
-				
-				<hr class="line"/>
-
-				<p>
-					Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress,
-					навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.
-				</p>
-			</div>
-	
-			<div class="slick-slide"> 
-				<img src="images/icons/course-icon-2.png" alt="Drupal icon">
-				<h2>Розробка сайтів на Drupal 8</h2>
-
-				<hr class="line"/>
-
-				<p>
-					Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою,
-					ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).
-				</p>
-			</div>
-	
-			<div class="slick-slide"> 
-				<img src="images/icons/course-icon-3.png" alt="Testing icon">
-				<h2>Ознайомлення з тестуванням</h2>
-
-				<hr class="line"/>
-
-				<p>
-					Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.
-					Також А-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).
-				</p>		
-			</div>
-		</div>
-	</section>
-
-	<section class="course-details">
-		<div class="content">
-			<div>
-				<img src="images/icons/statistic-icon-1.png" alt="static icon 1">
-				<p class="num">25</p>
-				<p class="info">курсів організовано</p>
-			</div>
-			
-			<div>
-				<img src="images/icons/statistic-icon-2.png" alt="static icon 2">
-				<p class="num">836</p>
-				<p class="info">годин занять проведенно</p>
-			</div>
-
-			<div>
-				<img src="images/icons/statistic-icon-3.png" alt="static icon 3">
-				<p class="num">500</p>
-				<p class="info">студентів навчено</p>
-			</div>
-			
-			<div>
-				<img src="images/icons/statistic-icon-4.png" alt="static icon 4">
-				<p class="num">120</p>
-				<p class="info">випускників курсів працевлаштовано</p>
-			</div>
-		</div>
-
-		<div class="content-table">
-			<table>
-				<tr>
-					<td>
-						<img src="images/icons/statistic-icon-1.png" alt="static icon 1">
-						<p class="num">25</p>
-						<p class="info">курсів організовано</p>
-					</td>
-					<td>
-						<img src="images/icons/statistic-icon-2.png" alt="static icon 2">
-						<p class="num">836</p>
-						<p class="info">годин занять проведенно</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="images/icons/statistic-icon-3.png" alt="static icon 3">
-						<p class="num">500</p>
-						<p class="info">студентів навчено</p>
-					</td>
-					<td>
-						<img src="images/icons/statistic-icon-4.png" alt="static icon 4">
-						<p class="num">120</p>
-						<p class="info">випускників курсів працевлаштовано</p>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</section>
-
-	<section class="testimonials">
-		<h1 class="head">Що кажуть студенти наших курсів:</h1>
-
-		<div class="slider">
-			<div class="slick-slide">
-				<p>
-					Під час проходження курсів Drupal у школі ОхIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. 
-					Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. 
-					Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.
-				</p>
-			
-				<p class="author">Коля</p>
-				<p class="author-info"><i>Drupal-девелопер</i></p>
-			</div>
-
-			<div class="slick-slide"> 
-				<p>
-					Ще цікавий текст про OxIT
-				</p>
-				
-				<p class="author">Ще один студент</p>
-				<p class="author-info"><i>Студент</i></p>			
-			</div>
-
-			<div class="slick-slide"> 
-				<p>
-					І ще одни цікавий текст про OxIT
-				</p>
-				
-				<p class="author">І ще один студент</p>
-				<p class="author-info"><i>Студент</i></p>			
-			</div>
-		</div>
-	</section>
-
-	<section class="video">
-		<h1>Відео</h1>
-		<p>
-			Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
-			Lorem Ipsum є, фактично, стандартною "рибою" аж з ХѴІ сторіччя, 
-			коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
-			"Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, 
-			залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, 
-			які містили уривки з Lorem Ipsum, і вдруге нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, 
-			які використовували різні версії Lorem Ipsum.
-		</p>
-
-		<iframe src="https://www.youtube.com/embed/JLHvS0qR5Lw?si=01lCKlsSvB3IrN3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	</section>
-
-	<section class="mentors">
-		<h1 class="head">Наші ментори</h1>
-
-		<div class="mentors-slider">
-			<div class="slick-slide">
-				<div class="mentors-page">
-					<img src="images/viktor.png" alt="Victor">
-
-					<div class="name-and-about">
-						<p class="name">Віктор</p>
-						<p class="about">
-							Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! 
-							Сам засновник і СЕО компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.<br/><br/>
-							Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, 
-							ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, 
-							що знає все — саморозвиток для нього не закінчується жодної хвилини.<br/><br/>
-							На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. 
-							А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. 
-							Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.<br/><br/>
-							Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!
+		<section class="reg-course">
+			<div class="main-content">
+				<div class="left">
+					<div class="content">
+						<h1 class="left-head">Курси програмування у Луцьку</h1>
+						<p>
+							Сфера ІТ розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ.
+							Існує лише - одна проблема брак дійсно кваліфікованих спеціалістів в Україні.
+							Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів.
+							ІТ школа ОхІТ створила таку методику навчання, при якій за короткий час ви отримаєте необхідні знання, щоб стати ІТ
+							спеціалістом. Чекаємо вас на нших курсах з
+							програмування в Луцьку. Старт наступного курсу 3 серпня.
 						</p>
 					</div>
 				</div>
-			</div>
 
-			<div class="slick-slide"> 
-				<div class="mentors-page">
-					<img src="images/mark.png" alt="Mark">
+				<div class="right">
+					<div class="form">
+						<h2 class="right-head">Зареєструватися на курси</h2>
 
-					<div class="name-and-about">
-						<p class="name">Марк</p>
-						<p class="about">Інформацію про Марка мені не дали</p>
+						<label for="name">Ім'я <img src="images/icons/required.png" alt="required"></label>
+						<input type="text" name="name" id="name" placeholder="Ім'я" required><br/>
+						
+						<label for="surname">Прізвище <img src="images/icons/required.png" alt="required"></label>
+						<input type="text" name="surname" id="surname" placeholder="Прізвище" required><br/>
+
+						<label for="qa">Мене більше цікавить <img src="images/icons/required.png" alt="required"></label>
+						<input type="text" name="qa" id="qa" placeholder="developer or QA" required><br/>
+						
+						<label for="phone">Номер телефону <img src="images/icons/required.png" alt="required"></label>
+						<input type="number" name="phone" id="phone" placeholder="Номер телефону: +38 XXX XX XX XXX" required><br/>
+						
+						<label for="email">Email <img src="images/icons/required.png" alt="required"></label>
+						<input type="email" name="email" id="email" placeholder="Email" required><br/>
+
+						<input type="checkbox" name="agree" id="agree" required>
+						<label for="agree">
+							Я погоджуюся з <a href="#">Політикою Конфіденційності</a> <img src="images/icons/required.png" alt="required">
+						</label>
 					</div>
+
+					<br/>
+
+					<input type="button" value="ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ" class="submit">
+				</div>
+			</div>
+		</section>
+
+		<section class="course">
+			<h1>Курс "Розробка сайтів"</h1>
+
+			<div class="about-desk">
+				<div>
+					<img src="images/icons/course-icon-1.png" alt="WordPress icon">
+					<h2>Розробка сайтів на WordPress</h2>
+					
+					<hr class="line"/>
+
+					<p>
+						Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress,
+						навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.
+					</p>
+				</div>
+		
+				<div>
+					<img src="images/icons/course-icon-2.png" alt="Drupal icon">
+					<h2>Розробка сайтів на Drupal 8</h2>
+
+					<hr class="line"/>
+
+					<p>
+						Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою,
+						ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).
+					</p>
+				</div>
+		
+				<div>
+					<img src="images/icons/course-icon-3.png" alt="Testing icon">
+					<h2>Ознайомлення з тестуванням</h2>
+
+					<hr class="line"/>
+
+					<p>
+						Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.
+						Також А-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).
+					</p>
 				</div>
 			</div>
 
-			<div class="slick-slide"> 
-				<div class="mentors-page">
-					<img src="images/vova.png" alt="Vova">
+			<div class="about-mob">
+				<div class="slick-slide">
+					<img src="images/icons/course-icon-1.png" alt="WordPress icon">
+					<h2>Розробка сайтів на WordPress</h2>
+					
+					<hr class="line"/>
 
-					<div class="name-and-about">
-						<p class="name">Вова</p>
-						<p class="about">Інформацію про Вову мені теж не дали</p>
+					<p>
+						Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress,
+						навчишся створювати сайти різної складності: від блогів до інтернет магазинів. Всі знання закріпиш за допомогою тестових завдань.
+					</p>
+				</div>
+		
+				<div class="slick-slide"> 
+					<img src="images/icons/course-icon-2.png" alt="Drupal icon">
+					<h2>Розробка сайтів на Drupal 8</h2>
+
+					<hr class="line"/>
+
+					<p>
+						Для створення чудових сайтів на Drupal 8, цеглинка за цеглинкою,
+						ти пізнаєш секрети основних та додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багатьох інших).
+					</p>
+				</div>
+		
+				<div class="slick-slide"> 
+					<img src="images/icons/course-icon-3.png" alt="Testing icon">
+					<h2>Ознайомлення з тестуванням</h2>
+
+					<hr class="line"/>
+
+					<p>
+						Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ.
+						Також А-спеціаліст розкаже про види тестування (функціональне, регресивне, системне, тестування швидкодії тощо).
+					</p>		
+				</div>
+			</div>
+		</section>
+
+		<section class="course-details">
+			<div class="content">
+				<div>
+					<img src="images/icons/statistic-icon-1.png" alt="static icon 1">
+					<p class="num">25</p>
+					<p class="info">курсів організовано</p>
+				</div>
+				
+				<div>
+					<img src="images/icons/statistic-icon-2.png" alt="static icon 2">
+					<p class="num">836</p>
+					<p class="info">годин занять проведенно</p>
+				</div>
+
+				<div>
+					<img src="images/icons/statistic-icon-3.png" alt="static icon 3">
+					<p class="num">500</p>
+					<p class="info">студентів навчено</p>
+				</div>
+				
+				<div>
+					<img src="images/icons/statistic-icon-4.png" alt="static icon 4">
+					<p class="num">120</p>
+					<p class="info">випускників курсів працевлаштовано</p>
+				</div>
+			</div>
+
+			<div class="content-table">
+				<table>
+					<tr>
+						<td>
+							<img src="images/icons/statistic-icon-1.png" alt="static icon 1">
+							<p class="num">25</p>
+							<p class="info">курсів організовано</p>
+						</td>
+						<td>
+							<img src="images/icons/statistic-icon-2.png" alt="static icon 2">
+							<p class="num">836</p>
+							<p class="info">годин занять проведенно</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/icons/statistic-icon-3.png" alt="static icon 3">
+							<p class="num">500</p>
+							<p class="info">студентів навчено</p>
+						</td>
+						<td>
+							<img src="images/icons/statistic-icon-4.png" alt="static icon 4">
+							<p class="num">120</p>
+							<p class="info">випускників курсів працевлаштовано</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+		<section class="testimonials">
+			<h1 class="head">Що кажуть студенти наших курсів:</h1>
+
+			<div class="slider">
+				<div class="slick-slide">
+					<p>
+						Під час проходження курсів Drupal у школі ОхIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. 
+						Після успішного завершення курсів мені надали можливість продовжити навчання вже в якості Intern Site Builder. 
+						Зараз я можу сказати, що Drupal та OxIT повністю змінили моє життя.
+					</p>
+				
+					<p class="author">Коля</p>
+					<p class="author-info"><i>Drupal-девелопер</i></p>
+				</div>
+
+				<div class="slick-slide"> 
+					<p>
+						Ще цікавий текст про OxIT
+					</p>
+					
+					<p class="author">Ще один студент</p>
+					<p class="author-info"><i>Студент</i></p>			
+				</div>
+
+				<div class="slick-slide"> 
+					<p>
+						І ще одни цікавий текст про OxIT
+					</p>
+					
+					<p class="author">І ще один студент</p>
+					<p class="author-info"><i>Студент</i></p>			
+				</div>
+			</div>
+		</section>
+
+		<section class="video">
+			<div>
+				<h1>Відео</h1>
+				<p>
+					Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. 
+					Lorem Ipsum є, фактично, стандартною "рибою" аж з ХѴІ сторіччя, 
+					коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. 
+					"Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, 
+					залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, 
+					які містили уривки з Lorem Ipsum, і вдруге нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, 
+					які використовували різні версії Lorem Ipsum.
+				</p>
+
+				<iframe src="https://www.youtube.com/embed/JLHvS0qR5Lw?si=01lCKlsSvB3IrN3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+		</section>
+
+		<section class="mentors">
+			<h1 class="head">Наші ментори</h1>
+
+			<div class="mentors-slider">
+				<div class="slick-slide">
+					<div class="mentors-page">
+						<img src="images/viktor.png" alt="Victor">
+
+						<div class="name-and-about">
+							<p class="name">Віктор</p>
+							<p class="about">
+								Майбутнім управлінцям неабияк пощастило - адже з ними ділитиметься досвідом управлінець із величезним досвідом! 
+								Сам засновник і СЕО компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.<br/><br/>
+								Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, 
+								ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, 
+								що знає все — саморозвиток для нього не закінчується жодної хвилини.<br/><br/>
+								На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. 
+								А от заповітні мрії не стоять на полиці, бо Віктор вміє впевнено йти до їхнього здійснення. 
+								Тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.<br/><br/>
+								Буде нестримна, мов гірська лавина, енергія, помножена на мудрість і досвід. І ви таке пропустите? Записуйтесь уже зараз!
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="slick-slide"> 
+					<div class="mentors-page">
+						<img src="images/mark.png" alt="Mark">
+
+						<div class="name-and-about">
+							<p class="name">Марк</p>
+							<p class="about">Інформацію про Марка мені не дали</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="slick-slide"> 
+					<div class="mentors-page">
+						<img src="images/vova.png" alt="Vova">
+
+						<div class="name-and-about">
+							<p class="name">Вова</p>
+							<p class="about">Інформацію про Вову мені теж не дали</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5847.065494031452!2d25.314346817470014!3d50.71453667671926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997e35d0f675%3A0xcaf4978e644adf7e!2z0LLRg9C70LjRhtGPINCR0L7QttC10L3QutCwLCAzNNCTLCDQm9GD0YbRjNC6LCDQktC-0LvQuNC90YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQzMDAw!5e0!3m2!1suk!2sua!4v1724222734598!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	</section>
+		<section class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5847.065494031452!2d25.314346817470014!3d50.71453667671926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997e35d0f675%3A0xcaf4978e644adf7e!2z0LLRg9C70LjRhtGPINCR0L7QttC10L3QutCwLCAzNNCTLCDQm9GD0YbRjNC6LCDQktC-0LvQuNC90YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDQzMDAw!5e0!3m2!1suk!2sua!4v1724222734598!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
 
-	<section class="call-to-action">
-		<div class="content">
-			<div>
-				<img src="images/icons/phone-icon.png" alt="static icon 1">
-				<p class="title">Телефон</p>
-				<p class="info">+38 067 332 17 55</p>
+		<section class="call-to-action">
+			<div class="content">
+				<div>
+					<img src="images/icons/phone-icon.png" alt="static icon 1">
+					<p class="title">Телефон</p>
+					<p class="info">+38 067 332 17 55</p>
+				</div>
+				
+				<div>
+					<img src="images/icons/email-icon.png" alt="static icon 2">
+					<p class="title">E-mail</p>
+					<p class="info">office@it.volyn.ua</p>
+				</div>
+				
+				<div>
+					<img src="images/icons/location-icon.png" alt="static icon 3">
+					<p class="title">Адреса</p>
+					<p class="info">вул. Боженка 34г, Луцьк</p>
+				</div>
+				
+				<div>
+					<img src="images/icons/facebook-icon.png" alt="static icon 4">
+					<p class="title">Facebook</p>
+					<p class="info">facebook.com/oxitschool</p>
+				</div>
 			</div>
-			
-			<div>
-				<img src="images/icons/email-icon.png" alt="static icon 2">
-				<p class="title">E-mail</p>
-				<p class="info">office@it.volyn.ua</p>
-			</div>
-			
-			<div>
-				<img src="images/icons/location-icon.png" alt="static icon 3">
-				<p class="title">Адреса</p>
-				<p class="info">вул. Боженка 34г, Луцьк</p>
-			</div>
-			
-			<div>
-				<img src="images/icons/facebook-icon.png" alt="static icon 4">
-				<p class="title">Facebook</p>
-				<p class="info">facebook.com/oxitschool</p>
-			</div>
-		</div>
 
-		<div class="content-table">
-			<table>
-				<tr>
-					<td>
-						<img src="images/icons/phone-icon.png" alt="static icon 1">
-						<p class="title">Телефон</p>
-						<p class="info">+38 067 332 17 55</p>
-					</td>
-					<td>
-						<img src="images/icons/email-icon.png" alt="static icon 2">
-						<p class="title">E-mail</p>
-						<p class="info">office@it.volyn.ua</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="images/icons/location-icon.png" alt="static icon 3">
-						<p class="title">Адреса</p>
-						<p class="info">вул. Боженка 34г, Луцьк</p>
-					</td>
-					<td>
-						<img src="images/icons/facebook-icon.png" alt="static icon 4">
-						<p class="title">Facebook</p>
-						<p class="info">facebook.com/oxitschool</p>
-					</td>
-				</tr>
-			</table>
-		</div>
-	</section>
+			<div class="content-table">
+				<table>
+					<tr>
+						<td>
+							<img src="images/icons/phone-icon.png" alt="static icon 1">
+							<p class="title">Телефон</p>
+							<p class="info">+38 067 332 17 55</p>
+						</td>
+						<td>
+							<img src="images/icons/email-icon.png" alt="static icon 2">
+							<p class="title">E-mail</p>
+							<p class="info">office@it.volyn.ua</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/icons/location-icon.png" alt="static icon 3">
+							<p class="title">Адреса</p>
+							<p class="info">вул. Боженка 34г, Луцьк</p>
+						</td>
+						<td>
+							<img src="images/icons/facebook-icon.png" alt="static icon 4">
+							<p class="title">Facebook</p>
+							<p class="info">facebook.com/oxitschool</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
 
-	<footer>
-		<div class="footer">
-			<p><a href="#">© Copyright 2018-2020 Internet Devels</a></p>
-			<p>Умови політики конфіденційності</p>
-		</div>
-	</footer>
-</body>
+		<footer>
+			<div class="footer">
+				<p><a href="#">© Copyright 2018-2020 Internet Devels</a></p>
+				<p>Умови політики конфіденційності</p>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
 </html>
