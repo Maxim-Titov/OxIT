@@ -4,22 +4,44 @@
     margin: 0 auto;
 }
 
+q:lang(en) {
+    quotes: "\201C" "\201D"; /* Вид кавычек для английского языка */ 
+}
+
 .testimonials h1 {
     margin-top: 4%;
     text-align: center;
 }
 
-.testimonials p {
+.testimonials .quote {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials .quote p {
     text-align: center;
     font-size: 20px;
     width: 850px;
-    margin: 0 auto;
+}
+
+.testimonials .quote .open-quote, .testimonials .quote .close-quote {
+    font-family: Arial, sans-serif;
+    font-size: 100px;
+    color: #ccc;
+}
+
+.testimonials .quote .open-quote {
+    margin-top: -15px;
+}
+
+.testimonials .quote .close-quote {
+    margin-top: 90px;
 }
 
 .slider {
     text-align: center;
     position: relative;
-    height: 250px;
+    height: 400px;
 }
 
 .slider .slick-slide {
@@ -53,6 +75,18 @@
     }
 
     .slider {
-        height: 250px;
+        height: 550px;
+    }
+
+    .testimonials .quote .open-quote, .testimonials .quote .close-quote {
+        font-size: 50px;
+    }
+
+    .testimonials .quote .open-quote {
+        margin-top: 0;
+    }
+
+    .testimonials .quote .close-quote {
+        margin-top: 300px;
     }
 }
