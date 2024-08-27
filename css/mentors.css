@@ -72,7 +72,7 @@
     }
 
     .mentors-slider {
-        height: 650px;
+        height: 850px;
     }
 }
 
@@ -101,8 +101,12 @@
     .mentors-slider .about, .mentors-slider .name {
         text-align: center;
     }
+}
 
+/*------------------------------------------------------------------*/
+
+@media(max-width: 370px) {
     .mentors-slider {
-        height: 650px;
+        height: 950px;
     }
 }

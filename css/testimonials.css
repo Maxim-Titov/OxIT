@@ -4,10 +4,6 @@
     margin: 0 auto;
 }
 
-q:lang(en) {
-    quotes: "\201C" "\201D"; /* Вид кавычек для английского языка */ 
-}
-
 .testimonials h1 {
     margin-top: 4%;
     text-align: center;

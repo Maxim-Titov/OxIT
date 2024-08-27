@@ -54,9 +54,8 @@
         background-color: #3d78b7;
         width: 60px;
         height: 40px;
-        z-index: 21;
-        top: 23px;
-        right: 25px;
+        top: 36px;
+        right: 15px;
         border-radius: 5px;
         position: absolute;
     }
@@ -70,7 +69,6 @@
         width: 26px;
         height: 26px;
         cursor: pointer;
-        z-index: 21;
     }
 
     .menu__btn > span {
@@ -100,7 +98,7 @@
         position: fixed;
         visibility: hidden;
         top: -100%;
-        left: -5%;
+        left: 0;
         width: 100%;
         margin: 0;
         padding: 15px;
@@ -108,7 +106,6 @@
         text-align: center;
         background-color: #ECEFF1;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-        z-index: 20;
     }
     
     .menu__item {
@@ -120,30 +117,11 @@
         background-color: #CFD8DC;
     }
 
-    #menu__toggle:checked ~ .menu__btn {
-        position: fixed;
-    }
-    #menu__toggle:checked ~ .menu__btn > span {
-        transform: rotate(45deg);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
     #menu__toggle:checked ~ .menu__box {
         visibility: visible;
         top: 115px;
     }
 
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        transition-duration: .25s;
-    }
     .menu__box {
         transition-duration: .25s;
     }

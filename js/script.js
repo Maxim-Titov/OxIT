@@ -4,7 +4,8 @@ $(document).ready(function(){
         infinite: true,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 10000
+        autoplaySpeed: 10000,
+        arrows: false
     });
 });
 
@@ -14,7 +15,8 @@ $(document).ready(function(){
         infinite: true,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 10000
+        autoplaySpeed: 10000,
+        arrows: false
     });
 });
 
@@ -24,6 +26,7 @@ $(document).ready(function(){
         infinite: true,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 10000
+        autoplaySpeed: 10000,
+        arrows: false
     });
 });
