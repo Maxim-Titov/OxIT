@@ -78,5 +78,9 @@ $(document).ready(function() {
         } else {
             $(agree_checkbox).removeClass('error');
         }
+
+        if ($(name_field).is(':valid') && $(surname_field).is(':valid') && $(qa_field).is(':valid') && $(phone_field).is(':valid') && $(email_field).is(':valid') && $(agree_checkbox).is(':checked')) {
+            alert("Запит на реєстрацію відправлено");
+        }
     })
 })
