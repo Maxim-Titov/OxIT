@@ -59,12 +59,20 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 992px) {
+@media(max-width: 1024px) {
     .testimonials {
         width: 100%;
         padding: 0;
     }
 
+    .slider {
+        height: 340px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
     .testimonials p {
         width: 100%;
         font-size: 14px;
@@ -83,6 +91,86 @@
     }
 
     .testimonials .quote .close-quote {
+        margin-top: 125px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 868px) {
+    .testimonials .quote .close-quote {
+        margin-top: 150px;
+    }
+
+    .slider {
+        height: 350px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 587px) {
+    .testimonials .quote .close-quote {
+        margin-top: 200px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 501px) {
+    .testimonials .quote .close-quote {
+        margin-top: 220px;
+    }
+
+    .slider {
+        height: 425px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 460px) {
+    .testimonials .quote .close-quote {
+        margin-top: 250px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 427px) {
+    .testimonials .quote .close-quote {
+        margin-top: 270px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 375px) {
+    .testimonials .quote .close-quote {
         margin-top: 300px;
+    }
+
+    .slider {
+        height: 500px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 346px) {
+    .testimonials .quote .close-quote {
+        margin-top: 330px;
+    }
+
+    .slider {
+        height: 550px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 335px) {
+    .testimonials .quote .close-quote {
+        margin-top: 360px;
     }
 }

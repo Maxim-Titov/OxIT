@@ -32,7 +32,7 @@
 				<img src="images/logo_Oxit.png" alt="OxIT logo">
 
 				<div class="hamburger-menu">
-					<input id="menu__toggle" type="checkbox" />
+					<input id="menu__toggle" type="checkbox"/>
 					<div class="button">
 						<label class="menu__btn" for="menu__toggle">
 							<span></span>
@@ -80,35 +80,44 @@
 				</div>
 
 				<div class="right">
-					<form action="get">
+					<form action="get" id="reg-form" novalidate>
 						<div class="form">
 							<h2 class="right-head">Зареєструватися на курси</h2>
 
 							<label for="name">Ім'я <img src="images/icons/required.png" alt="required"></label><br/>
-							<input type="text" name="name" id="name" placeholder="Ім'я" required><br/>
+							<div>
+								<input type="text" name="name" id="name" placeholder="Ім'я" required><br/>
+							</div>
 								
 							<label for="surname">Прізвище <img src="images/icons/required.png" alt="required"></label><br/>
-							<input type="text" name="surname" id="surname" placeholder="Прізвище" required><br/>
+							<div>
+								<input type="text" name="surname" id="surname" placeholder="Прізвище" required><br/>
+							</div>
 
 							<label for="qa">Мене більше цікавить <img src="images/icons/required.png" alt="required"></label><br/>
-							<input type="text" name="qa" id="qa" placeholder="developer or QA" required><br/>
+							<div>
+								<input type="text" name="qa" id="qa" placeholder="developer or QA" required><br/>
+							</div>
 								
 							<label for="phone">Номер телефону <img src="images/icons/required.png" alt="required"></label><br/>
-							<input type="number" name="phone" id="phone" placeholder="Номер телефону: +38 XXX XX XX XXX" required><br/>
+							<div>
+								<input type="number" name="phone" id="phone" placeholder="Номер телефону: +38 XXX XX XX XXX" required><br/>
+							</div>
 								
 							<label for="email">Email <img src="images/icons/required.png" alt="required"></label><br/>
-							<input type="email" name="email" id="email" placeholder="Email" required><br/>
+							<div>
+								<input type="email" name="email" id="email" placeholder="Email" required><br/>
+							</div>
 
 							<input type="checkbox" name="agree" id="agree" required>
-							<label for="agree">
+							<label for="agree" class="agree-lbl">
 								Я погоджуюся з <a href="#">Політикою Конфіденційності</a> <img src="images/icons/required.png" alt="required">
 							</label>
 						</div>
 
-					<br/>
+						<br/>
 
-					<button class="submit">ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ</button>
-
+						<button class="submit">ЗАРЕЄСТРУВАТИСЯ ЗАРАЗ</button>
 					</form>
 				</div>
 			</div>
@@ -441,6 +450,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript" src="js/form-validation.js"></script>
 	</body>
 </html>

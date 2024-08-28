@@ -83,7 +83,7 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 992px) {
+@media(max-width: 1024px) {
     .reg-course .main-content {
         width: 100%;
         padding: 0;
@@ -96,7 +96,16 @@
     }
 
     .reg-course .right {
-        padding-top: 75px;
+        padding: 75px 0 35px 0;
+    }
+
+    .reg-course .right .form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .reg-course .right .form div {
+        text-align: center;
     }
 
     .reg-course .right, .reg-course .left {
@@ -106,7 +115,7 @@
 
     #name, #surname, #qa, #phone, #email {
         height: 3lh;
-        width: 90%;
+        width: 100%;
     }
 
     .reg-course .right .form h2 {
@@ -121,4 +130,12 @@
     .reg-course .left .content {
         margin: 0 auto;
     }
+}
+
+/*-JS---------------------------------------------------------------*/
+
+.error {
+    outline-color: #f06767;
+    box-shadow: inset 0 0 10px 1px #f06767;
+    border: none;
 }

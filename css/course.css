@@ -43,12 +43,16 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 992px) {
+@media(max-width: 1024px) {
     .course {
         width: 100%;
         padding: 0;
     }
+}
 
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
     .course .about-desk {
         display: none;
     }
@@ -60,7 +64,7 @@
     .course .about-mob {
         text-align: center;
         position: relative;
-        height: 350px;
+        height: 315px;
     }
     
     .course .about-mob .slick-slide {
@@ -92,5 +96,13 @@
     .course .about-mob img {
         height: 100%;
         margin: 0 auto;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 868px) {
+    .course .about-mob {
+        height: 275px;
     }
 }

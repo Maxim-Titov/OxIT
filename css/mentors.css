@@ -47,12 +47,16 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 992px) {
+@media(max-width: 1024px) {
     .mentors {
         width: 100%;
         padding: 0;
     }
+}
 
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
     .mentors-slider .mentors-page {
         display: block;
     }
@@ -72,7 +76,15 @@
     }
 
     .mentors-slider {
-        height: 850px;
+        height: 625px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 868px) {
+    .mentors-slider {
+        height: 630px;
     }
 }
 
@@ -100,6 +112,26 @@
 
     .mentors-slider .about, .mentors-slider .name {
         text-align: center;
+    }
+
+    .mentors-slider {
+        height: 700px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 525px) {
+    .mentors-slider {
+        height: 750px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 450px) {
+    .mentors-slider {
+        height: 800px;
     }
 }
 
