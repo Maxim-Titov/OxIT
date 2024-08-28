@@ -7,7 +7,7 @@
     text-align: center;
     width: 1220px;
     padding: 15px;
-    margin: 0 auto;
+    margin: 70px auto 50px auto;
 }
 
 .video h1 {
@@ -25,11 +25,6 @@
 @media(max-width: 1200px) {
     .video div {
         width: 100%;
-        padding: 0;
-    }
-
-    .video h1 {
-        margin-top: 75px;
     }
 }
 
@@ -50,10 +45,6 @@
         padding: 0;
     }
 
-    .video h1 {
-        margin-top: 75px;
-    }
-
     .video iframe {
         width: 100%;
         height: 400px;
@@ -68,10 +59,6 @@
         padding: 0;
     }
 
-    .video h1 {
-        margin-top: 75px;
-    }
-
     .video iframe {
         width: 100%;
         height: 250px;
@@ -84,10 +71,6 @@
     .video {
         width: 100%;
         padding: 0;
-    }
-
-    .video h1 {
-        margin-top: 75px;
     }
 
     .video iframe {
