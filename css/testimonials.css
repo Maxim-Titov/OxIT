@@ -59,6 +59,15 @@
 
 /*------------------------------------------------------------------*/
 
+@media(max-width: 1200px) {
+    .testimonials {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
 @media(max-width: 1024px) {
     .testimonials {
         width: 100%;
@@ -79,7 +88,7 @@
     }
 
     .slider {
-        height: 550px;
+        height: 315px;
     }
 
     .testimonials .quote .open-quote, .testimonials .quote .close-quote {

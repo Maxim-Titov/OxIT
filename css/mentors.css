@@ -47,7 +47,7 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 1024px) {
+@media(max-width: 1200px) {
     .mentors {
         width: 100%;
         padding: 0;
@@ -132,6 +132,14 @@
 @media(max-width: 450px) {
     .mentors-slider {
         height: 800px;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 400px) {
+    .mentors-slider {
+        height: 850px;
     }
 }
 

@@ -83,6 +83,23 @@
 
 /*------------------------------------------------------------------*/
 
+@media(max-width: 1200px) {
+    .reg-course .main-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .reg-course .right, .reg-course .left {
+        width: 100%;
+    }
+
+    #name, #surname, #qa, #phone, #email {
+        width: 90%;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
 @media(max-width: 1024px) {
     .reg-course .main-content {
         width: 100%;
