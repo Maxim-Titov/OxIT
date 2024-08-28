@@ -11,6 +11,7 @@ footer {
 
 footer a {
     color: #7090c4;
+    text-decoration: none;
 }
 
 @media(max-width: 1220px) {
