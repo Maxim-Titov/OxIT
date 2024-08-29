@@ -55,7 +55,7 @@
         background-color: #3d78b7;
         width: 60px;
         height: 40px;
-        top: 36px;
+        top: 30px;
         right: 15px;
         border-radius: 5px;
         position: absolute;
@@ -119,7 +119,7 @@
 
     #menu__toggle:checked ~ .menu__box {
         visibility: visible;
-        top: 115px;
+        top: 100px;
     }
 
     .menu__box {
@@ -133,7 +133,7 @@
         background-color: #3d78b7;
         border-radius: 25px;
         padding: 3px 20px;
-        width: 75%;
+        width: 250px;
         margin: 0 auto;
     }
     

@@ -60,16 +60,38 @@
     .call-to-action .content-table {
         display: block;
         text-align: center;
-        padding: 25px 70px;
+    }
+
+    .call-to-action .content-table table {
+        margin: 30px auto;
     }
 
     .call-to-action .content-table td {
         width: 50%;
     }
 
-    .call-to-action .content-table td img {
+    .call-to-action .content-table td .phone {
         margin: 0;
-        width: 35px;
+        width: 30px;
+        height: 35px;
+    }
+
+    .call-to-action .content-table td .email {
+        margin: 0;
+        width: 45px;
+        height: 35px;
+    }
+
+    .call-to-action .content-table td .location {
+        margin: 0;
+        width: 30px;
+        height: 35px;
+    }
+
+    .call-to-action .content-table td .facebook {
+        margin: 0;
+        width: 30px;
+        height: 35px;
     }
 
     .call-to-action .content-table td p {
@@ -95,17 +117,27 @@
         padding: 25px;
     }
 
-    .call-to-action .content-table td {
-        width: 50%;
+    .call-to-action .content-table td .phone {
+        margin: 0;
+        width: 30px;
+        height: 35px;
     }
 
-    .call-to-action .content-table td img {
+    .call-to-action .content-table td .email {
         margin: 0;
-        width: 35px;
+        width: 45px;
+        height: 35px;
     }
 
-    .call-to-action .content-table td p {
-        font-size: 10px;
-        margin: 0;
+    .call-to-action .content-table td .location {
+        margin: 15px 0 0 0;
+        width: 30px;
+        height: 35px;
+    }
+
+    .call-to-action .content-table td .facebook {
+        margin: 15px 0 0 0;
+        width: 30px;
+        height: 35px;
     }
 }
