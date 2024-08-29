@@ -48,7 +48,7 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 500px) {
+@media(max-width: 768px) {
     .call-to-action {
         height: 225px;
     }
@@ -62,12 +62,51 @@
         text-align: center;
     }
 
-    .call-to-action .content-table table {
-        margin: 30px auto;
-    }
-
     .call-to-action .content-table td {
         width: 50%;
+    }
+
+    .call-to-action .content-table table {
+        margin: 10px auto;
+    }
+
+    .call-to-action .content-table td .phone {
+        margin: 0;
+        width: 40px;
+        height: 45px;
+    }
+
+    .call-to-action .content-table td .email {
+        margin: 0;
+        width: 55px;
+        height: 45px;
+    }
+
+    .call-to-action .content-table td .location {
+        margin: 0;
+        width: 40px;
+        height: 45px;
+        margin-top: 15px;
+    }
+
+    .call-to-action .content-table td .facebook {
+        margin: 0;
+        width: 40px;
+        height: 45px;
+        margin-top: 15px;
+    }
+
+    .call-to-action .content-table td p {
+        font-size: 10px;
+        margin: 0;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 500px) {
+    .call-to-action .content-table table {
+        margin: 30px auto;
     }
 
     .call-to-action .content-table td .phone {
