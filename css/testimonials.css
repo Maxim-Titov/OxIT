@@ -100,6 +100,7 @@
 
     .testimonials .quote .close-quote {
         margin-top: 125px;
+        padding: 0;
     }
 }
 
@@ -108,6 +109,7 @@
 @media(max-width: 868px) {
     .testimonials .quote .close-quote {
         margin-top: 150px;
+        padding: 0;
     }
 
     .slider {
@@ -117,21 +119,36 @@
 
 /*------------------------------------------------------------------*/
 
+@media(max-width: 690px) {
+    .testimonials .quote .close-quote {
+        margin-top: 170px;
+        padding: 0;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
 @media(max-width: 587px) {
     .testimonials .quote .close-quote {
-        margin-top: 200px;
+        margin-top: 190px;
+        padding-top: 0;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 501px) {
-    .testimonials .quote .close-quote {
-        margin-top: 220px;
+    .slider {
+        height: 325px;
     }
 
-    .slider {
-        height: 425px;
+    .slider .slick-slide .quote p {
+        font-size: 15px;
+    }
+
+    .testimonials .quote .close-quote {
+        margin-top: 115px;
+        padding-top: 0;
     }
 }
 
@@ -139,7 +156,8 @@
 
 @media(max-width: 460px) {
     .testimonials .quote .close-quote {
-        margin-top: 250px;
+        margin-top: 130px;
+        padding-top: 0;
     }
 }
 
@@ -147,38 +165,33 @@
 
 @media(max-width: 427px) {
     .testimonials .quote .close-quote {
-        margin-top: 270px;
+        margin-top: 150px;
+        padding-top: 0;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 375px) {
-    .testimonials .quote .close-quote {
-        margin-top: 300px;
+    .slider {
+        height: 400px;
     }
 
-    .slider {
-        height: 500px;
+    .testimonials .quote .close-quote {
+        margin-top: 190px;
+        padding-top: 0;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 346px) {
-    .testimonials .quote .close-quote {
-        margin-top: 330px;
-    }
-
     .slider {
-        height: 550px;
+        height: 400px;
     }
-}
 
-/*------------------------------------------------------------------*/
-
-@media(max-width: 335px) {
     .testimonials .quote .close-quote {
-        margin-top: 360px;
+        margin-top: 190px;
+        padding-top: 0;
     }
 }

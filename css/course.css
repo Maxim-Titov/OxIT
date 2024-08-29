@@ -105,4 +105,8 @@
     .course .about-mob {
         height: 275px;
     }
+
+    .course .about-mob .slick-slide p {
+        font-size: 15px;
+    }
 }
