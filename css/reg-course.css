@@ -5,14 +5,17 @@
 
 .reg-course .main-content {
     width: 1220px;
-    padding: 15px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 
 .reg-course .left {
-    margin-top: 75px;
+    margin-top: 40px;
+}
+
+.reg-course .left h1 {
+    font-size: 34px;
 }
 
 .reg-course .right {
@@ -38,8 +41,16 @@
     text-align: center;
 }
 
+.reg-course .right h2 {
+    font-size: 23px;
+}
+
 .reg-course .right .form {
     text-align: left;
+}
+
+.reg-course .right .form label {
+    font-size: 16px;
 }
 
 .reg-course .right .form img {
@@ -64,7 +75,7 @@
 }
 
 #name, #surname, #qa, #phone, #email, #agree {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .submit {

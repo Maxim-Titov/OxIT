@@ -1,13 +1,12 @@
 .video {
     background-color: #F7F7F7;
-    margin-top: 25px;
 }
 
 .video div {
     text-align: center;
     width: 1220px;
     padding: 15px;
-    margin: 70px auto 50px auto;
+    margin: 25px auto 50px auto;
 }
 
 .video h1 {

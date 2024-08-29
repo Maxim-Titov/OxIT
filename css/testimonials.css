@@ -22,7 +22,7 @@
 
 .testimonials .quote .open-quote, .testimonials .quote .close-quote {
     font-family: Arial, sans-serif;
-    font-size: 100px;
+    font-size: 115px;
     color: #ccc;
 }
 
@@ -31,13 +31,13 @@
 }
 
 .testimonials .quote .close-quote {
-    margin-top: 90px;
+    padding-top: 90px;
 }
 
 .slider {
     text-align: center;
     position: relative;
-    height: 400px;
+    height: 375px;
 }
 
 .slider .slick-slide {
@@ -48,7 +48,6 @@
 .slider .slick-slide .author {
     font-size: 20px;
     text-align: center;
-    margin-top: 25px;
     color: black;
 }
 
