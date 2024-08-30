@@ -2,10 +2,9 @@ footer {
     width: 1220px;
     padding: 15px;
     text-align: center;
-    margin: 0 auto;
+    margin: 15px auto;
+    font-size: 15px;
 }
-
-
 
 footer a {
     color: #7090c4;

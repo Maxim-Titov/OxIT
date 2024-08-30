@@ -5,6 +5,7 @@
     color: white;
     padding: 2%;
     margin: 0;
+    font-size: 13px;
 }
 
 .call-to-action .content {
@@ -19,8 +20,14 @@
     text-align: center;
 }
 
-.call-to-action img {
-    margin-top: -8px;
+.call-to-action .content div .image-block {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.call-to-action .content div .image-block .email {
+    margin-top: 8px;
 }
 
 .call-to-action .title {
