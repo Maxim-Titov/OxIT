@@ -1,0 +1,195 @@
+.reg-course {
+    width: 100%;
+    background-color: #F7F7F7;
+
+    .main-content {
+        width: 1220px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .left {
+            margin-top: 40px;
+
+            h1 {
+                font-size: 34px;
+            }
+
+            .content {
+                width: 90%;
+                margin-top: 40%;
+                text-align: center;
+
+                p {
+                    line-height: 1.5lh;
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .right {
+            margin-top: 150px;
+            text-align: center;
+
+            a {
+                color: #7090c4;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            .form {
+                text-align: left;
+
+                label {
+                    font-size: 16px;
+                }
+
+                img {
+                    width: 10px;
+                }
+
+                #name, #surname, #qa, #phone, #email {
+                    height: 3.5lh;
+                    width: 100%;
+                    padding-left: 15px;
+                    border-radius: 5px;
+                    border: none;
+                    outline: 1px solid lightgray;
+                }
+
+                #name, #surname, #qa, #phone, #email, #agree {
+                    margin-bottom: 10px;
+                }
+
+                #name:focus, #surname:focus, #qa:focus, #phone:focus, #email:focus {
+                    outline-color: #6fade9;
+                }
+            }
+
+            .submit {
+                background-color: #3d78b7;
+                border: none;
+                border-radius: 25px;
+                padding: 15px 100px;
+                color: white;
+            }
+        }
+
+        .right, .left {
+            width: 50%;
+            margin-bottom: 35px;
+        }
+
+        .left-head, .right-head {
+            font-weight: 600;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1200px) {
+    .reg-course {
+        .main-content {
+            width: 100%;
+            padding: 0;
+
+            .right, .left {
+                width: 100%;
+            }
+
+            .right {
+                .form {
+                    #name, #surname, #qa, #phone, #email {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1024px) {
+    .reg-course {
+        .main-content {
+            width: 100%;
+            padding: 0;
+            display: block;
+            justify-content: none;
+
+            .right, .left {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .left {
+                padding-top: 150px;
+
+                .content {
+                    margin: 0 auto;
+                }
+            }
+
+            .right {
+                padding: 75px 0 35px 0;
+
+                .form {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    h2 {
+                        text-align: center;
+                    }
+
+                    div {
+                        text-align: center;
+
+                        #name, #surname, #qa, #phone, #email {
+                            height: 3lh;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .submit {
+                    width: 75%;
+                    padding: 15px 25px;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 600px) {
+    .reg-course {
+        .main-content {
+            .left {
+                .content {
+                    h1 {
+                        font-size: 25px;
+                    }
+                    
+                    p {
+                        font-size: 15px;
+                        line-height: 1lh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*-JS---------------------------------------------------------------*/
+
+.error {
+    outline-color: #f06767;
+    box-shadow: inset 0 0 10px 1px #f06767;
+    border: none;
+}

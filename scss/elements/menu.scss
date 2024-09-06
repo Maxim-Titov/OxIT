@@ -1,0 +1,139 @@
+.menu {
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            list-style: none;
+            padding-top: 10px;
+            margin: 20px 12px 0 12px;
+            font-size: 14px;
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: #7090c4;
+            }
+        }
+
+        .statement {
+            a {
+                color: white;
+            }
+
+            a:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+
+        #menu__toggle {
+            display: none;
+        }
+
+        #menu__toggle:checked ~ .menu__box {
+            visibility: visible;
+            top: 100px;
+        }
+
+        .button {
+            background-color: #3d78b7;
+            width: 60px;
+            height: 40px;
+            top: 30px;
+            right: 15px;
+            border-radius: 5px;
+            position: absolute;
+
+            .menu__btn {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 17px;
+                top: 8px;
+                width: 26px;
+                height: 26px;
+                cursor: pointer;
+
+                span {
+                    right: 0.5px;
+                }
+
+                span,
+                span::before,
+                span::after {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: white;
+                }
+
+                span::before {
+                    content: '';
+                    top: -8px;
+                }
+
+                span::after {
+                    content: '';
+                    top: 8px;
+                }
+            }
+        }
+
+        .menu__box {
+            display: block;
+            position: fixed;
+            visibility: hidden;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            padding: 15px;
+            list-style: none;
+            text-align: center;
+            background-color: white;
+            transition-duration: .25s;
+
+            .menu__item {
+                display: block;
+                padding: 12px 24px;
+                text-decoration: none;
+                transition-duration: .25s;
+            }
+
+            .menu__item:hover {
+                background-color: #CFD8DC;
+            }
+        }
+
+        .statement {
+            background-color: #3d78b7;
+            border-radius: 25px;
+            padding: 3px 20px;
+            width: 250px;
+            margin: 0 auto;
+
+            a {
+                color: white;
+            }
+        }
+    }
+}

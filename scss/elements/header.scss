@@ -1,0 +1,31 @@
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+    z-index: 100;
+
+    .header {
+        width: 1220px;
+        padding: 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        z-index: 100;
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1200px) {
+    header {
+        .header {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+.course {
+    text-align: center;
+    width: 1220px;
+    padding: 15px;
+    margin: 0 auto;
+
+    h1 {
+        margin-top: 50px;
+        font-weight: 450;
+    }
+
+    .about-desk {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+            width: 350px;
+            padding: 15px;
+
+            h2 {
+                color: #606060;
+                font-weight: 400;
+                font-size: 21px;
+            }
+
+            p {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .line {
+                background-color: #4BA4DF;
+                border: none;
+                height: 2px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .about-mob {
+        display: none;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1200px) {
+    .course {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 992px) {
+    .course {
+        .about-desk {
+            display: none;
+        }
+
+        .about-mob {
+            display: block;
+            text-align: center;
+            position: relative;
+            width: 85%;
+            height: 250px;
+            margin: 0 auto;
+
+            .slick-slide {
+                text-align: center;
+                position: relative;
+
+                img {
+                    height: 100%;
+                    margin: 0 auto;
+                }
+
+                h2 {
+                    color: #606060;
+                    font-weight: 400;
+                    font-size: 21px;
+                }
+
+                .line {
+                    background-color: #4BA4DF;
+                    border: none;
+                    height: 2px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 868px) {
+    .course { 
+        .about-mob {
+            height: 250px;
+
+            .slick-slide {
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 500px) {
+    .course { 
+        .about-mob {
+            height: 280px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 400px) {
+    .course { 
+        .about-mob {
+            height: 320px;
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 350px) {
+    .course { 
+        .about-mob {
+            height: 350px;
+        }
+    }
+}
