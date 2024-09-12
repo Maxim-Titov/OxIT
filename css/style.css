@@ -8,6 +8,7 @@ header {
 header .header {
   width: 1220px;
   padding: 15px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -34,26 +35,9 @@ header .header img {
   font-size: 13px;
 }
 .call-to-action .content {
-  width: 1220px;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-}
-.call-to-action .content div {
   text-align: center;
-}
-.call-to-action .content div a {
-  text-decoration: none;
-  color: white;
-}
-.call-to-action .content div a .image-block {
-  width: 55px;
-  height: 55px;
-  margin: 0 auto;
-}
-.call-to-action .content div a .image-block .email {
-  margin-top: 8px;
 }
 .call-to-action .title {
   font-size: 20px;
@@ -65,11 +49,46 @@ header .header img {
 }
 .call-to-action .content-table {
   display: none;
+  text-align: center;
+}
+.call-to-action .content-table table {
+  margin: 10px auto;
+}
+.call-to-action .content-table table td {
+  width: 50%;
+}
+.call-to-action .content-table table td a {
+  text-decoration: none;
+  color: white;
+}
+.call-to-action .content-table table td a .phone,
+.call-to-action .content-table table td a .email,
+.call-to-action .content-table table td a .location,
+.call-to-action .content-table table td a .facebook {
+  margin: 0;
+  width: 40px;
+  height: 45px;
+}
+.call-to-action .content-table table td a p {
+  font-size: 10px;
+  margin: 0;
+}
+.call-to-action a {
+  text-decoration: none;
+  color: white;
+}
+.call-to-action .image-block {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto;
+}
+.call-to-action .email {
+  margin-top: 8px;
 }
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1200px) {
-  .call-to-action .content {
+  .call-to-action .container .content {
     width: 100%;
   }
 }
@@ -78,80 +97,53 @@ header .header img {
   .call-to-action {
     height: 225px;
   }
-  .call-to-action .content {
+  .call-to-action .container .content {
     display: none;
   }
-  .call-to-action .content-table {
+  .call-to-action .container .content-table {
     display: block;
-    text-align: center;
   }
-  .call-to-action .content-table table {
-    margin: 10px auto;
-  }
-  .call-to-action .content-table table tr td {
-    width: 50%;
-  }
-  .call-to-action .content-table table tr td a {
-    text-decoration: none;
-    color: white;
-  }
-  .call-to-action .content-table table tr td a .phone {
+  .call-to-action .container .content-table table .location,
+  .call-to-action .container .content-table table .facebook {
     margin: 0;
-    width: 40px;
+    width: 35px;
     height: 45px;
   }
-  .call-to-action .content-table table tr td a .email {
-    margin: 0;
-    width: 55px;
-    height: 45px;
-  }
-  .call-to-action .content-table table tr td a .location {
-    margin: 0;
-    width: 40px;
-    height: 45px;
-    margin-top: 15px;
-  }
-  .call-to-action .content-table table tr td a .facebook {
-    margin: 0;
-    width: 40px;
-    height: 45px;
-    margin-top: 15px;
-  }
-  .call-to-action .content-table table tr td a p {
-    font-size: 10px;
-    margin: 0;
-  }
-}
-/*------------------------------------------------------------------*/
-@media (max-width: 500px) {
-  .call-to-action .content-table table {
-    margin: 30px auto;
-  }
-  .call-to-action .content-table table tr td a .phone {
+  .call-to-action .container .content-table table .phone {
     margin: 0;
     width: 30px;
     height: 35px;
   }
-  .call-to-action .content-table table tr td a .email {
+  .call-to-action .container .content-table table .email {
     margin: 0;
     width: 45px;
     height: 35px;
   }
-  .call-to-action .content-table table tr td a .location {
+  .call-to-action .container .content-table table .location,
+  .call-to-action .container .content-table table .facebook {
+    margin-top: 15px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 500px) {
+  .call-to-action .container .content-table table {
+    margin: 30px auto;
+  }
+  .call-to-action .container .content-table table tr td .phone,
+  .call-to-action .container .content-table table tr td .location,
+  .call-to-action .container .content-table table tr td .facebook {
     margin: 0;
     width: 30px;
     height: 35px;
-    margin-top: 15px;
   }
-  .call-to-action .content-table table tr td a .facebook {
+  .call-to-action .container .content-table table tr td .email {
     margin: 0;
-    width: 30px;
+    width: 45px;
     height: 35px;
-    margin-top: 15px;
   }
-  .call-to-action .content-table table tr td a p {
-    font-size: 10px;
-    margin: 0;
+  .call-to-action .container .content-table table tr td .location,
+  .call-to-action .container .content-table table tr td .facebook {
+    margin-top: 15px;
   }
 }
 #course-details {
@@ -160,26 +152,25 @@ header .header img {
   margin-top: 4%;
   color: white;
 }
-#course-details .content {
-  width: 1220px;
-  padding: 15px;
+#course-details .container .content {
   display: flex;
   justify-content: space-between;
   padding: 75px;
   margin: 15px auto;
 }
-#course-details .content div {
+#course-details .container .content div {
+  width: 25%;
   text-align: center;
 }
-#course-details .content div img {
+#course-details .container .content div img {
   width: 85px;
   height: 60px;
 }
-#course-details .content div .num {
+#course-details .container .content div .num {
   font-size: 25px;
   margin-bottom: 0;
 }
-#course-details .content div .info {
+#course-details .container .content div .info {
   margin-top: 10px;
 }
 #course-details .content-table {
@@ -200,23 +191,23 @@ header .header img {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 500px) {
-  #course-details .content {
+  #course-details .container .content {
     display: none;
   }
-  #course-details .content-table {
+  #course-details .container .content-table {
     display: block;
     text-align: center;
     padding: 15px;
   }
-  #course-details .content-table td {
+  #course-details .container .content-table td {
     width: 50%;
   }
-  #course-details .content-table td img {
+  #course-details .container .content-table td img {
     margin: 0;
     width: 64px;
     height: 50px;
   }
-  #course-details .content-table td p {
+  #course-details .container .content-table td p {
     font-size: 10px;
     margin: 0;
   }
@@ -229,27 +220,25 @@ header .header img {
   margin-top: 50px;
   font-weight: 450;
 }
-#course .about-desk {
-  width: 1220px;
-  padding: 15px;
+#course .container .about-desk {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
-#course .about-desk div {
+#course .container .about-desk div {
   width: 350px;
   padding: 15px;
 }
-#course .about-desk div h2 {
+#course .container .about-desk div h2 {
   color: #606060;
   font-weight: 400;
   font-size: 21px;
 }
-#course .about-desk div p {
+#course .container .about-desk div p {
   width: 100%;
   margin: 0 auto;
 }
-#course .about-desk div .line {
+#course .container .about-desk div .line {
   background-color: #3d78b7;
   border: none;
   height: 2px;
@@ -261,49 +250,49 @@ header .header img {
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1200px) {
-  #course .about-desk {
+  #course .container .about-desk {
     width: 100%;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 1008px) {
-  #course .about-desk div {
+  #course .container .about-desk div {
     width: 310px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 850px) {
-  #course .about-desk {
+  #course .container .about-desk {
     display: none;
   }
-  #course .about-mob {
+  #course .container .about-mob {
     display: block;
     text-align: center;
     position: relative;
     width: 100%;
     margin: 0 auto;
   }
-  #course .about-mob .slick-slide {
+  #course .container .about-mob .slick-slide {
     text-align: center;
     position: relative;
     padding: 0 25px;
   }
-  #course .about-mob .slick-slide img {
+  #course .container .about-mob .slick-slide img {
     height: 100%;
     margin: 0 auto;
   }
-  #course .about-mob .slick-slide h2 {
+  #course .container .about-mob .slick-slide h2 {
     color: #606060;
     font-weight: 400;
     font-size: 21px;
   }
-  #course .about-mob .slick-slide .line {
+  #course .container .about-mob .slick-slide .line {
     background-color: #3d78b7;
     border: none;
     height: 2px;
     margin-bottom: 25px;
   }
-  #course .about-mob .slick-slide p {
+  #course .container .about-mob .slick-slide p {
     font-size: 15px;
   }
 }
@@ -315,6 +304,7 @@ footer {
 footer .footer {
   width: 1220px;
   padding: 15px;
+  margin: 0 auto;
   margin: 15px auto;
 }
 footer .footer a {
@@ -336,42 +326,43 @@ footer .footer a {
   padding: 0;
 }
 
-#mentors {
+#mentors .container {
   width: 1220px;
   padding: 15px;
+  margin: 0 auto;
   text-align: center;
   margin: 0 auto;
 }
-#mentors .content .head {
+#mentors .container .head {
   font-size: 35px;
 }
-#mentors .content .mentors-slider {
+#mentors .container .mentors-slider {
   text-align: center;
   position: relative;
   height: 465px;
 }
-#mentors .content .mentors-slider .slick-slide {
+#mentors .container .mentors-slider .slick-slide {
   text-align: center;
   position: relative;
 }
-#mentors .content .mentors-slider .slick-slide .mentors-page {
+#mentors .container .mentors-slider .slick-slide .mentors-page {
   display: flex;
   justify-content: center;
 }
-#mentors .content .mentors-slider .slick-slide .mentors-page img {
+#mentors .container .mentors-slider .slick-slide .mentors-page img {
   height: 100%;
 }
-#mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about {
+#mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about {
   padding-left: 100px;
   width: 65%;
 }
-#mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about .name {
+#mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .name {
   color: #4496db;
   font-weight: bold;
   font-size: 22px;
   text-align: left;
 }
-#mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about .about {
+#mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .about {
   text-align: left;
 }
 
@@ -383,51 +374,50 @@ footer .footer a {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 992px) {
-  #mentors .content .mentors-slider {
+  #mentors .container .mentors-slider {
     height: 625px;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page {
+  #mentors .container .mentors-slider .slick-slide .mentors-page {
     display: block;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page img {
+  #mentors .container .mentors-slider .slick-slide .mentors-page img {
     width: 200px;
     margin: 0 auto;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about {
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about {
     padding-left: 0;
     width: 100%;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about .about, #mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about .name {
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .about, #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .name {
     text-align: center;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 868px) {
-  #mentors .content .mentors-slider {
+  #mentors .container .mentors-slider {
     height: 630px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 768px) {
-  #mentors {
+  #mentors .container {
     width: 100%;
-    padding: 0;
   }
-  #mentors .content .mentors-slider {
+  #mentors .container .mentors-slider {
     height: 700px;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page {
+  #mentors .container .mentors-slider .slick-slide .mentors-page {
     display: block;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page img {
+  #mentors .container .mentors-slider .slick-slide .mentors-page img {
     width: 200px;
     margin: 0 auto;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about {
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about {
     padding-left: 0;
     width: 100%;
   }
-  #mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about .about, #mentors .content .mentors-slider .slick-slide .mentors-page .name-and-about .name {
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .about, #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .name {
     text-align: center;
   }
 }
@@ -594,49 +584,49 @@ footer .footer a {
   width: 100%;
   background-color: #F7F7F7;
 }
-#reg-course .main-content {
+#reg-course .container {
   width: 1220px;
   padding: 15px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
-#reg-course .main-content .left {
+#reg-course .container .left {
   margin-top: 40px;
 }
-#reg-course .main-content .left h1 {
+#reg-course .container .left h1 {
   font-size: 34px;
 }
-#reg-course .main-content .left .content {
+#reg-course .container .left .content {
   width: 90%;
   margin-top: 40%;
   text-align: center;
 }
-#reg-course .main-content .left .content p {
+#reg-course .container .left .content p {
   line-height: 1.5lh;
   width: 90%;
   margin: 0 auto;
 }
-#reg-course .main-content .right {
+#reg-course .container .right {
   margin-top: 150px;
   text-align: center;
 }
-#reg-course .main-content .right a {
+#reg-course .container .right a {
   color: #7090c4;
 }
-#reg-course .main-content .right h2 {
+#reg-course .container .right h2 {
   font-size: 23px;
 }
-#reg-course .main-content .right .form {
+#reg-course .container .right .form {
   text-align: left;
 }
-#reg-course .main-content .right .form label {
+#reg-course .container .right .form label {
   font-size: 16px;
 }
-#reg-course .main-content .right .form img {
+#reg-course .container .right .form img {
   width: 10px;
 }
-#reg-course .main-content .right .form #name, #reg-course .main-content .right .form #surname, #reg-course .main-content .right .form #qa, #reg-course .main-content .right .form #phone, #reg-course .main-content .right .form #email {
+#reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email {
   height: 3.5lh;
   width: 100%;
   padding-left: 15px;
@@ -644,85 +634,85 @@ footer .footer a {
   border: none;
   outline: 1px solid lightgray;
 }
-#reg-course .main-content .right .form #name, #reg-course .main-content .right .form #surname, #reg-course .main-content .right .form #qa, #reg-course .main-content .right .form #phone, #reg-course .main-content .right .form #email, #reg-course .main-content .right .form #agree {
+#reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email, #reg-course .container .right .form #agree {
   margin-bottom: 10px;
 }
-#reg-course .main-content .right .form #name:focus, #reg-course .main-content .right .form #surname:focus, #reg-course .main-content .right .form #qa:focus, #reg-course .main-content .right .form #phone:focus, #reg-course .main-content .right .form #email:focus {
+#reg-course .container .right .form #name:focus, #reg-course .container .right .form #surname:focus, #reg-course .container .right .form #qa:focus, #reg-course .container .right .form #phone:focus, #reg-course .container .right .form #email:focus {
   outline-color: #6fade9;
 }
-#reg-course .main-content .right .submit {
+#reg-course .container .right .submit {
   background-color: #3d78b7;
   border: none;
   border-radius: 25px;
   padding: 15px 100px;
   color: white;
 }
-#reg-course .main-content .right, #reg-course .main-content .left {
+#reg-course .container .right, #reg-course .container .left {
   width: 50%;
   margin-bottom: 35px;
 }
-#reg-course .main-content .left-head, #reg-course .main-content .right-head {
+#reg-course .container .left-head, #reg-course .container .right-head {
   font-weight: 600;
 }
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1200px) {
-  #reg-course .main-content {
+  #reg-course .container {
     width: 100%;
   }
-  #reg-course .main-content .right, #reg-course .main-content .left {
+  #reg-course .container .right, #reg-course .container .left {
     width: 100%;
   }
-  #reg-course .main-content .right .form #name, #reg-course .main-content .right .form #surname, #reg-course .main-content .right .form #qa, #reg-course .main-content .right .form #phone, #reg-course .main-content .right .form #email {
+  #reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email {
     width: 90%;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 1024px) {
-  #reg-course .main-content {
+  #reg-course .container {
     width: 100%;
     padding: 0;
     display: block;
     justify-content: none;
   }
-  #reg-course .main-content .right, #reg-course .main-content .left {
+  #reg-course .container .right, #reg-course .container .left {
     width: 100%;
     margin: 0 auto;
   }
-  #reg-course .main-content .left {
+  #reg-course .container .left {
     padding-top: 150px;
   }
-  #reg-course .main-content .left .content {
+  #reg-course .container .left .content {
     margin: 0 auto;
   }
-  #reg-course .main-content .right {
+  #reg-course .container .right {
     padding: 75px 0 35px 0;
   }
-  #reg-course .main-content .right .form {
+  #reg-course .container .right .form {
     width: 90%;
     margin: 0 auto;
   }
-  #reg-course .main-content .right .form h2 {
+  #reg-course .container .right .form h2 {
     text-align: center;
   }
-  #reg-course .main-content .right .form div {
+  #reg-course .container .right .form div {
     text-align: center;
   }
-  #reg-course .main-content .right .form div #name, #reg-course .main-content .right .form div #surname, #reg-course .main-content .right .form div #qa, #reg-course .main-content .right .form div #phone, #reg-course .main-content .right .form div #email {
+  #reg-course .container .right .form div #name, #reg-course .container .right .form div #surname, #reg-course .container .right .form div #qa, #reg-course .container .right .form div #phone, #reg-course .container .right .form div #email {
     height: 3lh;
     width: 100%;
   }
-  #reg-course .main-content .right .submit {
+  #reg-course .container .right .submit {
     width: 75%;
     padding: 15px 25px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 600px) {
-  #reg-course .main-content .left .content h1 {
+  #reg-course .container .left .content h1 {
     font-size: 25px;
   }
-  #reg-course .main-content .left .content p {
+  #reg-course .container .left .content p {
     font-size: 15px;
     line-height: 1lh;
   }
@@ -734,12 +724,7 @@ footer .footer a {
   border: none;
 }
 
-#testimonials {
-  width: 1220px;
-  padding: 15px;
-  margin: 0 auto;
-}
-#testimonials h1 {
+#testimonials .container h1 {
   margin-top: 4%;
   text-align: center;
 }
@@ -884,16 +869,17 @@ footer .footer a {
 #video {
   background-color: #F7F7F7;
 }
-#video div {
+#video .container {
   width: 1220px;
   padding: 15px;
+  margin: 0 auto;
   text-align: center;
   margin: 25px auto 50px auto;
 }
-#video div h1 {
+#video .container h1 {
   margin-top: 25px;
 }
-#video div iframe {
+#video .container iframe {
   width: 1020px;
   height: 500px;
   margin-bottom: 25px;
@@ -901,17 +887,17 @@ footer .footer a {
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1220px) {
-  #video div {
+  #video .container {
     width: 100%;
   }
-  #video div iframe {
+  #video .container iframe {
     width: 100%;
     height: 500px;
   }
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 992px) {
-  #video div iframe {
+  #video .container iframe {
     width: 100%;
     height: 500px;
   }
@@ -922,7 +908,7 @@ footer .footer a {
     width: 100%;
     padding: 0;
   }
-  #video div iframe {
+  #video .container iframe {
     width: 100%;
     height: 400px;
   }
@@ -933,7 +919,7 @@ footer .footer a {
     width: 100%;
     padding: 0;
   }
-  #video div iframe {
+  #video .container iframe {
     width: 100%;
     height: 250px;
   }
@@ -944,7 +930,7 @@ footer .footer a {
     width: 100%;
     padding: 0;
   }
-  #video div iframe {
+  #video .container iframe {
     width: 100%;
     height: 175px;
   }
@@ -995,11 +981,23 @@ body h4 {
   font-size: 18px;
   color: #373436;
 }
+body .container {
+  width: 1220px;
+  padding: 15px;
+  margin: 0 auto;
+}
 
 * {
   box-sizing: border-box;
 }
 
+/*------------------------------------------------------------------*/
+@media (max-width: 1220px) {
+  body .container {
+    width: 100%;
+    padding: 0;
+  }
+}
 /*------------------------------------------------------------------*/
 @media (max-width: 500px) {
   body h1 {
@@ -1015,3 +1013,5 @@ body h4 {
     font-size: 12px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

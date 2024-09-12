@@ -1,0 +1,121 @@
+#mentors .container {
+  width: 1220px;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+}
+#mentors .container .head {
+  font-size: 35px;
+}
+#mentors .container .mentors-slider {
+  text-align: center;
+  position: relative;
+  height: 465px;
+}
+#mentors .container .mentors-slider .slick-slide {
+  text-align: center;
+  position: relative;
+}
+#mentors .container .mentors-slider .slick-slide .mentors-page {
+  display: flex;
+  justify-content: center;
+}
+#mentors .container .mentors-slider .slick-slide .mentors-page img {
+  height: 100%;
+}
+#mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about {
+  padding-left: 100px;
+  width: 65%;
+}
+#mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .name {
+  color: #4496db;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: left;
+}
+#mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .about {
+  text-align: left;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  #mentors {
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 992px) {
+  #mentors .container .mentors-slider {
+    height: 625px;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page {
+    display: block;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about {
+    padding-left: 0;
+    width: 100%;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .about, #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .name {
+    text-align: center;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 868px) {
+  #mentors .container .mentors-slider {
+    height: 630px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 768px) {
+  #mentors .container {
+    width: 100%;
+  }
+  #mentors .container .mentors-slider {
+    height: 700px;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page {
+    display: block;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about {
+    padding-left: 0;
+    width: 100%;
+  }
+  #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .about, #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .name {
+    text-align: center;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 525px) {
+  #mentors .content .mentors-slider {
+    height: 750px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 450px) {
+  #mentors .content .mentors-slider {
+    height: 800px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 400px) {
+  #mentors .content .mentors-slider {
+    height: 850px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 370px) {
+  #mentors .content .mentors-slider {
+    height: 950px;
+  }
+}
+
+/*# sourceMappingURL=mentors.css.map */

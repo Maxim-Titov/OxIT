@@ -7,28 +7,30 @@
     margin-top: 4%;
     color: $white;
 
-    .content {
-        @include block-content-display;
-        @include space-between-align;
-        
-        padding: 75px;
-        margin: 15px auto;
+    .container {
+        .content {
+            @include space-between-align;
+            
+            padding: 75px;
+            margin: 15px auto;
 
-        div {
-            text-align: $center-align;
+            div {
+                width: 25%;
+                text-align: $center-align;
 
-            img {
-                width: 85px;
-                height: 60px;
-            }
+                img {
+                    width: 85px;
+                    height: 60px;
+                }
 
-            .num {
-                font-size: 25px;
-                margin-bottom: 0;
-            }
-        
-            .info {
-                margin-top: 10px;
+                .num {
+                    font-size: 25px;
+                    margin-bottom: 0;
+                }
+            
+                .info {
+                    margin-top: 10px;
+                }
             }
         }
     }
@@ -59,7 +61,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 500px) {
-    #course-details {
+    #course-details .container {
         .content {
             display: none;   
         }

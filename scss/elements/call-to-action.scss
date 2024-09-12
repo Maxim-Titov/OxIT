@@ -11,29 +11,8 @@
     font-size: 13px;
 
     .content {
-        @include block-content-display;
         @include space-between-align;
-
-        margin: 0 auto;
-
-        div {
-            text-align: $center-align;
-
-            a {
-                text-decoration: none;
-                color: $white;
-
-                .image-block {
-                    width: 55px;
-                    height: 55px;
-                    margin: 0 auto;
-
-                    .email {
-                        margin-top: 8px;
-                    }
-                }
-            }
-        }
+        text-align: $center-align;
     }
 
     .title {
@@ -48,75 +27,95 @@
 
     .content-table {
         display: none;
-    }
-}
+        text-align: $center-align;
+        table {
+            margin: 10px auto;
 
-/*------------------------------------------------------------------*/
+            td {
+                width: 50%;
+                a {
+                    text-decoration: none;
+                    color: $white;
 
-@media(max-width: 1200px) {
-    .call-to-action {
-        .content {
-            @include block-display;
+                    .phone,
+                    .email,
+                    .location,
+                    .facebook {
+                        margin: 0;
+                        width: 40px;
+                        height: 45px;
+                    }
+
+                    p {
+                        font-size: 10px;
+                        margin: 0;
+                    }
+                }
+            }
         }
     }
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    .image-block {
+        width: 55px;
+        height: 55px;
+        margin: 0 auto;
+    }
+
+    .email {
+        margin-top: 8px;
+    }
 }
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 768px) {
+@media (max-width: 1200px) {
+    .call-to-action .container .content {
+        @include block-display;
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
     .call-to-action {
         height: 225px;
 
-        .content {
-            display: none;
-        }
+        .container {
+            .content {
+                display: none;
+            }
+    
+            .content-table {
+                display: block;
 
-        .content-table {
-            display: block;
-            text-align: $center-align;
+                table {
+                    .location,
+                    .facebook {
+                        margin: 0;
+                        width: 35px;
+                        height: 45px;
+                    }
 
-            table {
-                margin: 10px auto;
-
-                tr {
-                    td {
-                        width: 50%;
-
-                        a {
-                            text-decoration: none;
-                            color: $white;
-
-                            .phone {
-                                margin: 0;
-                                width: 40px;
-                                height: 45px;
-                            }
+                    .phone {
+                        margin: 0;
+                        width: 30px;
+                        height: 35px;
+                    }
             
-                            .email {
-                                margin: 0;
-                                width: 55px;
-                                height: 45px;
-                            }
+                    .email {
+                        margin: 0;
+                        width: 45px;
+                        height: 35px;
+                    }
             
-                            .location {
-                                margin: 0;
-                                width: 40px;
-                                height: 45px;
-                                margin-top: 15px;
-                            }
-            
-                            .facebook {
-                                margin: 0;
-                                width: 40px;
-                                height: 45px;
-                                margin-top: 15px;
-                            }
-            
-                            p {
-                                font-size: 10px;
-                                margin: 0;
-                            }
-                        }
+                    .location,
+                    .facebook {
+                        margin-top: 15px;
                     }
                 }
             }
@@ -126,48 +125,28 @@
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 500px) {
-    .call-to-action {
-        .content-table {
-            table {
-                margin: 30px auto;
+@media (max-width: 500px) {
+    .call-to-action .container .content-table table {
+        margin: 30px auto;
 
-                tr {
-                    td {
-                        a {
-                            .phone {
-                                margin: 0;
-                                width: 30px;
-                                height: 35px;
-                            }
-            
-                            .email {
-                                margin: 0;
-                                width: 45px;
-                                height: 35px;
-                            }
-            
-                            .location {
-                                margin: 0;
-                                width: 30px;
-                                height: 35px;
-                                margin-top: 15px;
-                            }
-            
-                            .facebook {
-                                margin: 0;
-                                width: 30px;
-                                height: 35px;
-                                margin-top: 15px;
-                            }
-            
-                            p {
-                                font-size: 10px;
-                                margin: 0;
-                            }   
-                        }
-                    }
-                }
+        tr td {
+            .phone,
+            .location,
+            .facebook {
+                margin: 0;
+                width: 30px;
+                height: 35px;
+            }
+    
+            .email {
+                margin: 0;
+                width: 45px;
+                height: 35px;
+            }
+    
+            .location,
+            .facebook {
+                margin-top: 15px;
             }
         }
     }

@@ -4,7 +4,7 @@
 #video {
     background-color: $second-background-color;
 
-    div {
+    .container {
         @include block-content-display;
 
         text-align: $center-align;
@@ -26,7 +26,7 @@
 
 @media(max-width: 1220px) {
     #video {
-        div {
+        .container {
             @include block-display;
 
             iframe {
@@ -41,7 +41,7 @@
 
 @media(max-width: 992px) {
     #video {
-        div {
+        .container {
             iframe {
                 width: 100%;
                 height: 500px;
@@ -57,7 +57,7 @@
         width: 100%;
         padding: 0;
 
-        div {
+        .container {
             iframe {
                 width: 100%;
                 height: 400px;
@@ -73,7 +73,7 @@
         width: 100%;
         padding: 0;
 
-        div {
+        .container {
             iframe {
                 width: 100%;
                 height: 250px;
@@ -89,7 +89,7 @@
         width: 100%;
         padding: 0;
 
-        div {
+        .container {
             iframe {
                 width: 100%;
                 height: 175px;

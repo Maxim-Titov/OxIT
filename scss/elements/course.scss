@@ -10,10 +10,9 @@
         font-weight: 450;
     }
 
-    .about-desk {
-        @include block-content-display;
+    .container .about-desk {
         @include space-between-align;
-        
+            
         margin: 0 auto;
 
         div {
@@ -48,7 +47,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    #course {
+    #course .container {
         .about-desk {
             @include block-display;
         }
@@ -58,7 +57,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1008px) {
-    #course {
+    #course .container {
         .about-desk {
             div {
                 width: 310px;
@@ -70,7 +69,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 850px) {
-    #course {
+    #course .container {
         .about-desk {
             display: none;
         }

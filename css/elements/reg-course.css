@@ -1,0 +1,145 @@
+#reg-course {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+#reg-course .container {
+  width: 1220px;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#reg-course .container .left {
+  margin-top: 40px;
+}
+#reg-course .container .left h1 {
+  font-size: 34px;
+}
+#reg-course .container .left .content {
+  width: 90%;
+  margin-top: 40%;
+  text-align: center;
+}
+#reg-course .container .left .content p {
+  line-height: 1.5lh;
+  width: 90%;
+  margin: 0 auto;
+}
+#reg-course .container .right {
+  margin-top: 150px;
+  text-align: center;
+}
+#reg-course .container .right a {
+  color: #7090c4;
+}
+#reg-course .container .right h2 {
+  font-size: 23px;
+}
+#reg-course .container .right .form {
+  text-align: left;
+}
+#reg-course .container .right .form label {
+  font-size: 16px;
+}
+#reg-course .container .right .form img {
+  width: 10px;
+}
+#reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email {
+  height: 3.5lh;
+  width: 100%;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid lightgray;
+}
+#reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email, #reg-course .container .right .form #agree {
+  margin-bottom: 10px;
+}
+#reg-course .container .right .form #name:focus, #reg-course .container .right .form #surname:focus, #reg-course .container .right .form #qa:focus, #reg-course .container .right .form #phone:focus, #reg-course .container .right .form #email:focus {
+  outline-color: #6fade9;
+}
+#reg-course .container .right .submit {
+  background-color: #3d78b7;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 100px;
+  color: white;
+}
+#reg-course .container .right, #reg-course .container .left {
+  width: 50%;
+  margin-bottom: 35px;
+}
+#reg-course .container .left-head, #reg-course .container .right-head {
+  font-weight: 600;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  #reg-course .container {
+    width: 100%;
+  }
+  #reg-course .container .right, #reg-course .container .left {
+    width: 100%;
+  }
+  #reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email {
+    width: 90%;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+  #reg-course .container {
+    width: 100%;
+    padding: 0;
+    display: block;
+    justify-content: none;
+  }
+  #reg-course .container .right, #reg-course .container .left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #reg-course .container .left {
+    padding-top: 150px;
+  }
+  #reg-course .container .left .content {
+    margin: 0 auto;
+  }
+  #reg-course .container .right {
+    padding: 75px 0 35px 0;
+  }
+  #reg-course .container .right .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #reg-course .container .right .form h2 {
+    text-align: center;
+  }
+  #reg-course .container .right .form div {
+    text-align: center;
+  }
+  #reg-course .container .right .form div #name, #reg-course .container .right .form div #surname, #reg-course .container .right .form div #qa, #reg-course .container .right .form div #phone, #reg-course .container .right .form div #email {
+    height: 3lh;
+    width: 100%;
+  }
+  #reg-course .container .right .submit {
+    width: 75%;
+    padding: 15px 25px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 600px) {
+  #reg-course .container .left .content h1 {
+    font-size: 25px;
+  }
+  #reg-course .container .left .content p {
+    font-size: 15px;
+    line-height: 1lh;
+  }
+}
+/*-JS---------------------------------------------------------------*/
+.error {
+  outline-color: #f06767;
+  box-shadow: inset 0 0 10px 1px #f06767;
+  border: none;
+}
+
+/*# sourceMappingURL=reg-course.css.map */

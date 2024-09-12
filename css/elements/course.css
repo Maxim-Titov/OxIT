@@ -1,0 +1,86 @@
+#course {
+  width: 100%;
+  text-align: center;
+}
+#course h1 {
+  margin-top: 50px;
+  font-weight: 450;
+}
+#course .container .about-desk {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#course .container .about-desk div {
+  width: 350px;
+  padding: 15px;
+}
+#course .container .about-desk div h2 {
+  color: #606060;
+  font-weight: 400;
+  font-size: 21px;
+}
+#course .container .about-desk div p {
+  width: 100%;
+  margin: 0 auto;
+}
+#course .container .about-desk div .line {
+  background-color: #3d78b7;
+  border: none;
+  height: 2px;
+  margin-bottom: 25px;
+}
+#course .about-mob {
+  display: none;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  #course .container .about-desk {
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 1008px) {
+  #course .container .about-desk div {
+    width: 310px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 850px) {
+  #course .container .about-desk {
+    display: none;
+  }
+  #course .container .about-mob {
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #course .container .about-mob .slick-slide {
+    text-align: center;
+    position: relative;
+    padding: 0 25px;
+  }
+  #course .container .about-mob .slick-slide img {
+    height: 100%;
+    margin: 0 auto;
+  }
+  #course .container .about-mob .slick-slide h2 {
+    color: #606060;
+    font-weight: 400;
+    font-size: 21px;
+  }
+  #course .container .about-mob .slick-slide .line {
+    background-color: #3d78b7;
+    border: none;
+    height: 2px;
+    margin-bottom: 25px;
+  }
+  #course .container .about-mob .slick-slide p {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=course.css.map */

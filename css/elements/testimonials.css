@@ -1,0 +1,144 @@
+#testimonials .container h1 {
+  margin-top: 4%;
+  text-align: center;
+}
+#testimonials .slider {
+  text-align: center;
+  position: relative;
+  height: 375px;
+}
+#testimonials .slider .slick-slide {
+  text-align: center;
+  position: relative;
+}
+#testimonials .slider .slick-slide .quote {
+  display: flex;
+  justify-content: center;
+}
+#testimonials .slider .slick-slide .quote p {
+  text-align: center;
+  font-size: 20px;
+  width: 850px;
+}
+#testimonials .slider .slick-slide .quote .open-quote, #testimonials .slider .slick-slide .quote .close-quote {
+  font-family: Arial, sans-serif;
+  font-size: 115px;
+  color: #ccc;
+}
+#testimonials .slider .slick-slide .quote .open-quote {
+  margin-top: -15px;
+}
+#testimonials .slider .slick-slide .quote .close-quote {
+  padding-top: 90px;
+}
+#testimonials .slider .slick-slide .about-author .author {
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+#testimonials .slider .slick-slide .about-author .author-info {
+  text-align: center;
+  font-size: 17px;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  #testimonials {
+    width: 100%;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 1024px) {
+  #testimonials .slider {
+    height: 340px;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 992px) {
+  #testimonials .slider {
+    height: 315px;
+  }
+  #testimonials .slider .slick-slide .quote .open-quote, #testimonials .slider .slick-slide .quote .close-quote {
+    font-size: 50px;
+  }
+  #testimonials .slider .slick-slide .quote .open-quote {
+    margin-top: 0;
+  }
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 125px;
+    padding: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 868px) {
+  #testimonials .slider {
+    height: 350px;
+  }
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 150px;
+    padding: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 690px) {
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 170px;
+    padding: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 587px) {
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 190px;
+    padding-top: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 501px) {
+  #testimonials .slider {
+    height: 325px;
+  }
+  #testimonials .slider .slick-slide .quote p {
+    font-size: 15px;
+  }
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 115px;
+    padding-top: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 460px) {
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 130px;
+    padding-top: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 427px) {
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 150px;
+    padding-top: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 375px) {
+  #testimonials .slider {
+    height: 400px;
+  }
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 190px;
+    padding-top: 0;
+  }
+}
+/*------------------------------------------------------------------*/
+@media (max-width: 346px) {
+  #testimonials .slider {
+    height: 400px;
+  }
+  #testimonials .slider .slick-slide .quote .close-quote {
+    margin-top: 190px;
+    padding-top: 0;
+  }
+}
+
+/*# sourceMappingURL=testimonials.css.map */

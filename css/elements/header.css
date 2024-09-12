@@ -1,0 +1,29 @@
+header {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+header .header {
+  width: 1220px;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 100;
+}
+header .header img {
+  width: 80px;
+  height: 80px;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+  header .header {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

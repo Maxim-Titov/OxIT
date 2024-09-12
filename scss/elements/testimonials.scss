@@ -1,11 +1,7 @@
 @import '../global/mixins.scss';
 
 #testimonials {
-    @include block-content-display;
-    
-    margin: 0 auto;
-
-    h1 {
+    .container h1 {
         margin-top: 4%;
         text-align: $center-align;
     }

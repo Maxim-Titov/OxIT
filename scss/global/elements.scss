@@ -39,10 +39,24 @@ body {
         font-size: 18px;
         color: $h-main-color;
     }
+
+    .container {
+        @include block-content-display;
+    }
 }
 
 * {
     box-sizing: border-box;
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 1220px) {
+    body .container {
+        @include block-display;
+
+        padding: 0;
+    }
 }
 
 /*------------------------------------------------------------------*/

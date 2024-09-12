@@ -1,0 +1,24 @@
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+footer .footer {
+  width: 1220px;
+  padding: 15px;
+  margin: 0 auto;
+  margin: 15px auto;
+}
+footer .footer a {
+  color: #7090c4;
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------*/
+@media (max-width: 1220px) {
+  footer .footer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
