@@ -1,12 +1,16 @@
-.reg-course {
-    width: 100%;
-    background-color: #F7F7F7;
+@import '../global/mixins.scss';
+
+#reg-course {
+    @include block-display;
+    
+    background-color: $second-background-color;
 
     .main-content {
-        width: 1220px;
+        @include block-content-display;
+        
         margin: 0 auto;
         display: flex;
-        justify-content: center;
+        justify-content: $center-align;
 
         .left {
             margin-top: 40px;
@@ -18,7 +22,7 @@
             .content {
                 width: 90%;
                 margin-top: 40%;
-                text-align: center;
+                text-align: $center-align;
 
                 p {
                     line-height: 1.5lh;
@@ -30,10 +34,10 @@
 
         .right {
             margin-top: 150px;
-            text-align: center;
+            text-align: $center-align;
 
             a {
-                color: #7090c4;
+                color: $link-color-blue;
             }
 
             h2 {
@@ -57,7 +61,7 @@
                     padding-left: 15px;
                     border-radius: 5px;
                     border: none;
-                    outline: 1px solid lightgray;
+                    outline: 1px solid $light-gray;
                 }
 
                 #name, #surname, #qa, #phone, #email, #agree {
@@ -65,16 +69,16 @@
                 }
 
                 #name:focus, #surname:focus, #qa:focus, #phone:focus, #email:focus {
-                    outline-color: #6fade9;
+                    outline-color: $form-outline-color;
                 }
             }
 
             .submit {
-                background-color: #3d78b7;
+                background-color: $second-main-color;
                 border: none;
                 border-radius: 25px;
                 padding: 15px 100px;
-                color: white;
+                color: $white;
             }
         }
 
@@ -92,13 +96,12 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    .reg-course {
+    #reg-course {
         .main-content {
-            width: 100%;
-            padding: 0;
+            @include block-display;
 
             .right, .left {
-                width: 100%;
+                @include block-display;
             }
 
             .right {
@@ -115,15 +118,17 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1024px) {
-    .reg-course {
+    #reg-course {
         .main-content {
-            width: 100%;
+            @include block-display;
+
             padding: 0;
             display: block;
             justify-content: none;
 
             .right, .left {
-                width: 100%;
+                @include block-display;
+
                 margin: 0 auto;
             }
 
@@ -143,11 +148,11 @@
                     margin: 0 auto;
 
                     h2 {
-                        text-align: center;
+                        text-align: $center-align;
                     }
 
                     div {
-                        text-align: center;
+                        text-align: $center-align;
 
                         #name, #surname, #qa, #phone, #email {
                             height: 3lh;
@@ -168,7 +173,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 600px) {
-    .reg-course {
+    #reg-course {
         .main-content {
             .left {
                 .content {
@@ -189,7 +194,7 @@
 /*-JS---------------------------------------------------------------*/
 
 .error {
-    outline-color: #f06767;
-    box-shadow: inset 0 0 10px 1px #f06767;
+    outline-color: $form-error-color;
+    box-shadow: inset 0 0 10px 1px $form-error-color;
     border: none;
 }

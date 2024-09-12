@@ -1,13 +1,18 @@
+@import '../global/mixins.scss';
+
 footer {
-    width: 1220px;
-    padding: 15px;
-    text-align: center;
-    margin: 15px auto;
+    @include block-display;
+    
+    text-align: $center-align;
     font-size: 15px;
 
     .footer {
+        @include block-content-display;
+        
+        margin: 15px auto;
+
         a {
-            color: #7090c4;
+            color: $link-color-blue;
             text-decoration: none;
         }
     }
@@ -17,7 +22,8 @@ footer {
 
 @media(max-width: 1220px) {
     footer {
-        width: 100%;
-        padding: 0;
+        .footer {
+            @include block-display;
+        }
     }
 }

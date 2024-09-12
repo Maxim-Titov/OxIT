@@ -1,3 +1,5 @@
+@import '../global/variables.scss';
+
 .menu {
     ul {
         display: flex;
@@ -14,11 +16,18 @@
             }
 
             a:hover {
-                color: #7090c4;
+                color: $link-color-blue;
             }
         }
 
         .statement {
+            background-color: $second-main-color;
+            border-radius: 25px;
+            width: 150px;
+            height: 2.3lh;
+            padding: 11px;
+            text-align: $center-align;
+
             a {
                 color: white;
             }
@@ -48,13 +57,37 @@
             display: none;
         }
 
+        #menu__toggle:checked ~ .button {
+            .menu__btn {
+                span {
+                    transform: rotate(45deg);
+                }   
+            }
+        }
+        #menu__toggle:checked ~ .button {
+            .menu__btn {
+                span::before {
+                    top: 0;
+                    transform: rotate(0);
+                }
+            }
+        }
+        #menu__toggle:checked ~ .button {
+            .menu__btn {
+                span::after {
+                    top: 0;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+
         #menu__toggle:checked ~ .menu__box {
             visibility: visible;
             top: 100px;
         }
 
         .button {
-            background-color: #3d78b7;
+            background-color: $second-main-color;
             width: 60px;
             height: 40px;
             top: 30px;
@@ -64,7 +97,7 @@
 
             .menu__btn {
                 display: flex;
-                align-items: center;
+                align-items: $center-align;
                 position: absolute;
                 right: 17px;
                 top: 8px;
@@ -84,6 +117,7 @@
                     width: 100%;
                     height: 2px;
                     background-color: white;
+                    transition-duration: .25s;
                 }
 
                 span::before {
@@ -108,7 +142,7 @@
             margin: 0;
             padding: 15px;
             list-style: none;
-            text-align: center;
+            text-align: $center-align;
             background-color: white;
             transition-duration: .25s;
 
@@ -125,7 +159,7 @@
         }
 
         .statement {
-            background-color: #3d78b7;
+            background-color: $second-main-color;
             border-radius: 25px;
             padding: 3px 20px;
             width: 250px;

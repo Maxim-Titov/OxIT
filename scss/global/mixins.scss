@@ -1,0 +1,15 @@
+@import 'variables.scss';
+
+@mixin block-display {
+    width: 100%;
+}
+
+@mixin block-content-display {
+    width: $content-width;
+    padding: $content-padding;
+}
+
+@mixin space-between-align {
+    display: flex;
+    justify-content: space-between;
+}

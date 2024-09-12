@@ -1,12 +1,14 @@
+@import 'variables.scss';
+
 body {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     font-size: 16px;
-    color: #737373;
+    color: $font-main-color;
 
     a {
-        color: #737373;
+        color: $font-main-color;
     }
 }

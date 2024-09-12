@@ -23,10 +23,25 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.about-mob').slick({
         dots: true,
+        arrows: false,
         infinite: true,
-        fade: true,
         autoplay: true,
         autoplaySpeed: 10000,
-        arrows: false
+        mobileFirst: true,
+        slidesToShow: 1,
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 601,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
     });
 });

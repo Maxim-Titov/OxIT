@@ -1,6 +1,9 @@
+@import '../global/mixins.scss';
+
 .call-to-action {
-    width: 100%;
-    background-color: #4496db;
+    @include block-display;
+
+    background-color: $third-main-color;
     height: 225px;
     color: white;
     padding: 2%;
@@ -8,22 +11,26 @@
     font-size: 13px;
 
     .content {
-        width: 1220px;
-        padding: 15px;
-        display: flex;
-        justify-content: space-around;
+        @include block-content-display;
+        @include space-between-align;
+
         margin: 0 auto;
 
         div {
-            text-align: center;
+            text-align: $center-align;
 
-            .image-block {
-                width: 55px;
-                height: 55px;
-                margin: 0 auto;
+            a {
+                text-decoration: none;
+                color: $white;
 
-                .email {
-                    margin-top: 8px;
+                .image-block {
+                    width: 55px;
+                    height: 55px;
+                    margin: 0 auto;
+
+                    .email {
+                        margin-top: 8px;
+                    }
                 }
             }
         }
@@ -49,8 +56,7 @@
 @media(max-width: 1200px) {
     .call-to-action {
         .content {
-            width: 100%;
-            padding: 15px;
+            @include block-display;
         }
     }
 }
@@ -67,44 +73,51 @@
 
         .content-table {
             display: block;
-            text-align: center;
+            text-align: $center-align;
 
             table {
                 margin: 10px auto;
-            }
 
-            td {
-                width: 50%;
+                tr {
+                    td {
+                        width: 50%;
 
-                .phone {
-                    margin: 0;
-                    width: 40px;
-                    height: 45px;
-                }
+                        a {
+                            text-decoration: none;
+                            color: $white;
 
-                .email {
-                    margin: 0;
-                    width: 55px;
-                    height: 45px;
-                }
-
-                .location {
-                    margin: 0;
-                    width: 40px;
-                    height: 45px;
-                    margin-top: 15px;
-                }
-
-                .facebook {
-                    margin: 0;
-                    width: 40px;
-                    height: 45px;
-                    margin-top: 15px;
-                }
-
-                p {
-                    font-size: 10px;
-                    margin: 0;
+                            .phone {
+                                margin: 0;
+                                width: 40px;
+                                height: 45px;
+                            }
+            
+                            .email {
+                                margin: 0;
+                                width: 55px;
+                                height: 45px;
+                            }
+            
+                            .location {
+                                margin: 0;
+                                width: 40px;
+                                height: 45px;
+                                margin-top: 15px;
+                            }
+            
+                            .facebook {
+                                margin: 0;
+                                width: 40px;
+                                height: 45px;
+                                margin-top: 15px;
+                            }
+            
+                            p {
+                                font-size: 10px;
+                                margin: 0;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -118,38 +131,42 @@
         .content-table {
             table {
                 margin: 30px auto;
-            }
 
-            td {
-                .phone {
-                    margin: 0;
-                    width: 30px;
-                    height: 35px;
-                }
-
-                .email {
-                    margin: 0;
-                    width: 45px;
-                    height: 35px;
-                }
-
-                .location {
-                    margin: 0;
-                    width: 30px;
-                    height: 35px;
-                    margin-top: 15px;
-                }
-
-                .facebook {
-                    margin: 0;
-                    width: 30px;
-                    height: 35px;
-                    margin-top: 15px;
-                }
-
-                p {
-                    font-size: 10px;
-                    margin: 0;
+                tr {
+                    td {
+                        a {
+                            .phone {
+                                margin: 0;
+                                width: 30px;
+                                height: 35px;
+                            }
+            
+                            .email {
+                                margin: 0;
+                                width: 45px;
+                                height: 35px;
+                            }
+            
+                            .location {
+                                margin: 0;
+                                width: 30px;
+                                height: 35px;
+                                margin-top: 15px;
+                            }
+            
+                            .facebook {
+                                margin: 0;
+                                width: 30px;
+                                height: 35px;
+                                margin-top: 15px;
+                            }
+            
+                            p {
+                                font-size: 10px;
+                                margin: 0;
+                            }   
+                        }
+                    }
                 }
             }
         }

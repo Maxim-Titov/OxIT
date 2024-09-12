@@ -1,19 +1,21 @@
-.course-details {
-    width: 100%;
-    background-color: #4496db;
+@import '../global/mixins.scss';
+
+#course-details {
+    @include block-display;
+
+    background-color: $third-main-color;
     margin-top: 4%;
-    color: white;
-    padding: 2%;
+    color: $white;
 
     .content {
-        width: 1220px;
-        padding: 15px;
-        display: flex;
-        justify-content: space-around;
+        @include block-content-display;
+        @include space-between-align;
+        
+        padding: 75px;
         margin: 15px auto;
 
         div {
-            text-align: center;
+            text-align: $center-align;
 
             img {
                 width: 85px;
@@ -39,10 +41,9 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    .course-details {
+    #course-details {
         .content {
-            width: 100%;
-            padding: 15px;
+            @include block-display;
         }
     }
 }
@@ -50,7 +51,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
-    .course-details {
+    #course-details {
         margin-top: 75px;
     }
 }
@@ -58,15 +59,15 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 500px) {
-    .course-details {
+    #course-details {
         .content {
             display: none;   
         }
 
         .content-table {
             display: block;
-            text-align: center;
-            padding: 15px;
+            text-align: $center-align;
+            padding: $content-padding;
 
             td {
                 width: 50%;

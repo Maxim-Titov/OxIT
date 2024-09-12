@@ -1,8 +1,9 @@
-.course {
-    text-align: center;
-    width: 1220px;
-    padding: 15px;
-    margin: 0 auto;
+@import '../global/mixins.scss';
+
+#course {
+    @include block-display;
+
+    text-align: $center-align;
 
     h1 {
         margin-top: 50px;
@@ -10,15 +11,17 @@
     }
 
     .about-desk {
-        display: flex;
-        justify-content: space-around;
+        @include block-content-display;
+        @include space-between-align;
+        
+        margin: 0 auto;
 
         div {
             width: 350px;
             padding: 15px;
 
             h2 {
-                color: #606060;
+                color: $h2-second-color;
                 font-weight: 400;
                 font-size: 21px;
             }
@@ -29,7 +32,7 @@
             }
 
             .line {
-                background-color: #4BA4DF;
+                background-color: $second-main-color;
                 border: none;
                 height: 2px;
                 margin-bottom: 25px;
@@ -45,31 +48,44 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    .course {
-        width: 100%;
-        padding: 0;
+    #course {
+        .about-desk {
+            @include block-display;
+        }
     }
 }
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 992px) {
-    .course {
+@media(max-width: 1008px) {
+    #course {
+        .about-desk {
+            div {
+                width: 310px;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------*/
+
+@media(max-width: 850px) {
+    #course {
         .about-desk {
             display: none;
         }
 
         .about-mob {
             display: block;
-            text-align: center;
+            text-align: $center-align;
             position: relative;
-            width: 85%;
-            height: 250px;
+            width: 100%;
             margin: 0 auto;
 
             .slick-slide {
-                text-align: center;
+                text-align: $center-align;
                 position: relative;
+                padding: 0 25px;
 
                 img {
                     height: 100%;
@@ -77,64 +93,22 @@
                 }
 
                 h2 {
-                    color: #606060;
+                    color: $h2-second-color;
                     font-weight: 400;
                     font-size: 21px;
                 }
 
                 .line {
-                    background-color: #4BA4DF;
+                    background-color: $second-main-color;
                     border: none;
                     height: 2px;
                     margin-bottom: 25px;
                 }
-            }
-        }
-    }
-}
 
-/*------------------------------------------------------------------*/
-
-@media(max-width: 868px) {
-    .course { 
-        .about-mob {
-            height: 250px;
-
-            .slick-slide {
                 p {
                     font-size: 15px;
                 }
             }
-        }
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 500px) {
-    .course { 
-        .about-mob {
-            height: 280px;
-        }
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 400px) {
-    .course { 
-        .about-mob {
-            height: 320px;
-        }
-    }
-}
-
-/*------------------------------------------------------------------*/
-
-@media(max-width: 350px) {
-    .course { 
-        .about-mob {
-            height: 350px;
         }
     }
 }

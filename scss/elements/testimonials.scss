@@ -1,28 +1,30 @@
-.testimonials {
-    width: 1220px;
-    padding: 15px;
+@import '../global/mixins.scss';
+
+#testimonials {
+    @include block-content-display;
+    
     margin: 0 auto;
 
     h1 {
         margin-top: 4%;
-        text-align: center;
+        text-align: $center-align;
     }
 
     .slider {
-        text-align: center;
+        text-align: $center-align;
         position: relative;
         height: 375px;
 
         .slick-slide {
-            text-align: center;
+            text-align: $center-align;
             position: relative;
 
             .quote {
                 display: flex;
-                justify-content: center;
+                justify-content: $center-align;
         
                 p {
-                    text-align: center;
+                    text-align: $center-align;
                     font-size: 20px;
                     width: 850px;
                 }
@@ -30,7 +32,7 @@
                 .open-quote, .close-quote {
                     font-family: Arial, sans-serif;
                     font-size: 115px;
-                    color: #ccc;
+                    color: $quote-color;
                 }
         
                 .open-quote {
@@ -45,12 +47,12 @@
             .about-author {
                 .author {
                     font-size: 20px;
-                    text-align: center;
-                    color: black;
+                    text-align: $center-align;
+                    color: $black;
                 }
     
                 .author-info {
-                    text-align: center;
+                    text-align: $center-align;
                     font-size: 17px;
                 }
             }
@@ -61,19 +63,15 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    .testimonials {
-        width: 100%;
-        padding: 0;
+    #testimonials {
+        @include block-display;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1024px) {
-    .testimonials {
-        width: 100%;
-        padding: 0;
-
+    #testimonials {
         .slider {
             height: 340px;
         }
@@ -83,7 +81,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
-    .testimonials {
+    #testimonials {
         // p {
         //     width: 100%;
         //     font-size: 14px;
@@ -115,7 +113,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 868px) {
-    .testimonials {
+    #testimonials {
         .slider {
             height: 350px;
 
@@ -136,7 +134,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 690px) {
-    .testimonials {
+    #testimonials {
         .slider {
             .slick-slide {
                 .quote {
@@ -153,7 +151,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 587px) {
-    .testimonials {
+    #testimonials {
         .slider {
             .slick-slide {
                 .quote {
@@ -170,7 +168,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 501px) {
-    .testimonials {
+    #testimonials {
         .slider {
             height: 325px;
 
@@ -193,7 +191,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 460px) {
-    .testimonials {
+    #testimonials {
         .slider {
             .slick-slide {
                 .quote {
@@ -210,7 +208,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 427px) {
-    .testimonials {
+    #testimonials {
         .slider {
             .slick-slide {
                 .quote {
@@ -227,7 +225,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 375px) {
-    .testimonials {
+    #testimonials {
         .slider {
             height: 400px;
 
@@ -246,7 +244,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 346px) {
-    .testimonials {
+    #testimonials {
         .slider {
             height: 400px;
 
