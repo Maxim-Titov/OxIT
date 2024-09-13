@@ -47,22 +47,16 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    #course .container {
-        .about-desk {
-            @include block-display;
-        }
+    #course .container .about-desk {
+        @include block-display;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1008px) {
-    #course .container {
-        .about-desk {
-            div {
-                width: 310px;
-            }
-        }
+    #course .container .about-desk div {
+        width: 310px;
     }
 }
 

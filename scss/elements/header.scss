@@ -25,9 +25,7 @@ header {
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    header {
-        .header {
-            @include block-display;
-        }
+    header .header {
+        @include block-display;
     }
 }

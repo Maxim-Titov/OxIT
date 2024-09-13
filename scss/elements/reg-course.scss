@@ -54,7 +54,11 @@
                     width: 10px;
                 }
 
-                #name, #surname, #qa, #phone, #email {
+                #name,
+                #surname, 
+                #qa,
+                #phone,
+                #email {
                     height: 3.5lh;
                     width: 100%;
                     padding-left: 15px;
@@ -63,11 +67,20 @@
                     outline: 1px solid $light-gray;
                 }
 
-                #name, #surname, #qa, #phone, #email, #agree {
+                #name,
+                #surname,
+                #qa, 
+                #phone, 
+                #email,
+                #agree {
                     margin-bottom: 10px;
                 }
 
-                #name:focus, #surname:focus, #qa:focus, #phone:focus, #email:focus {
+                #name:focus,
+                #surname:focus,
+                #qa:focus,
+                #phone:focus,
+                #email:focus {
                     outline-color: $form-outline-color;
                 }
             }
@@ -95,20 +108,20 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    #reg-course {
-        .container {
+    #reg-course .container {
+        @include block-display;
+
+        .right, .left {
             @include block-display;
+        }
 
-            .right, .left {
-                @include block-display;
-            }
-
-            .right {
-                .form {
-                    #name, #surname, #qa, #phone, #email {
-                        width: 90%;
-                    }
-                }
+        .right .form {
+            #name,
+            #surname,
+            #qa,
+            #phone,
+            #email {
+                width: 90%;
             }
         }
     }
@@ -117,53 +130,55 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1024px) {
-    #reg-course {
-        .container {
+    #reg-course .container {
+        @include block-display;
+
+        padding: 0;
+        display: block;
+        justify-content: none;
+
+        .right, .left {
             @include block-display;
 
-            padding: 0;
-            display: block;
-            justify-content: none;
+            margin: 0 auto;
+        }
 
-            .right, .left {
-                @include block-display;
+        .left {
+            padding-top: 150px;
 
+            .content {
                 margin: 0 auto;
             }
+        }
 
-            .left {
-                padding-top: 150px;
+        .right {
+            padding: 75px 0 35px 0;
 
-                .content {
-                    margin: 0 auto;
+            .form {
+                width: 90%;
+                margin: 0 auto;
+
+                h2 {
+                    text-align: $center-align;
+                }
+
+                div {
+                    text-align: $center-align;
+
+                    #name,
+                    #surname,
+                    #qa,
+                    #phone,
+                    #email {
+                        height: 3lh;
+                        width: 100%;
+                    }
                 }
             }
 
-            .right {
-                padding: 75px 0 35px 0;
-
-                .form {
-                    width: 90%;
-                    margin: 0 auto;
-
-                    h2 {
-                        text-align: $center-align;
-                    }
-
-                    div {
-                        text-align: $center-align;
-
-                        #name, #surname, #qa, #phone, #email {
-                            height: 3lh;
-                            width: 100%;
-                        }
-                    }
-                }
-
-                .submit {
-                    width: 75%;
-                    padding: 15px 25px;
-                }
+            .submit {
+                width: 75%;
+                padding: 15px 25px;
             }
         }
     }
@@ -172,20 +187,14 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 600px) {
-    #reg-course {
-        .container {
-            .left {
-                .content {
-                    h1 {
-                        font-size: 25px;
-                    }
-                    
-                    p {
-                        font-size: 15px;
-                        line-height: 1lh;
-                    }
-                }
-            }
+    #reg-course .container .left .content {
+        h1 {
+            font-size: 25px;
+        }
+        
+        p {
+            font-size: 15px;
+            line-height: 1lh;
         }
     }
 }

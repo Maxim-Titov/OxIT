@@ -199,15 +199,18 @@ header .header img {
     text-align: center;
     padding: 15px;
   }
-  #course-details .container .content-table td {
+  #course-details .container .content-table table {
+    margin: 0 auto;
+  }
+  #course-details .container .content-table table tr td {
     width: 50%;
   }
-  #course-details .container .content-table td img {
+  #course-details .container .content-table table tr td img {
     margin: 0;
     width: 64px;
     height: 50px;
   }
-  #course-details .container .content-table td p {
+  #course-details .container .content-table table tr td p {
     font-size: 10px;
     margin: 0;
   }
@@ -326,6 +329,9 @@ footer .footer a {
   padding: 0;
 }
 
+#mentors {
+  width: 100%;
+}
 #mentors .container {
   width: 1220px;
   padding: 15px;
@@ -368,7 +374,7 @@ footer .footer a {
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1200px) {
-  #mentors {
+  #mentors .container {
     width: 100%;
   }
 }
@@ -423,26 +429,26 @@ footer .footer a {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 525px) {
-  #mentors .content .mentors-slider {
-    height: 750px;
-  }
-}
-/*------------------------------------------------------------------*/
-@media (max-width: 450px) {
-  #mentors .content .mentors-slider {
+  #mentors .container .mentors-slider {
     height: 800px;
   }
 }
 /*------------------------------------------------------------------*/
-@media (max-width: 400px) {
-  #mentors .content .mentors-slider {
+@media (max-width: 450px) {
+  #mentors .container .mentors-slider {
     height: 850px;
   }
 }
 /*------------------------------------------------------------------*/
+@media (max-width: 400px) {
+  #mentors .container .mentors-slider {
+    height: 900px;
+  }
+}
+/*------------------------------------------------------------------*/
 @media (max-width: 370px) {
-  #mentors .content .mentors-slider {
-    height: 950px;
+  #mentors .container .mentors-slider {
+    height: 1000px;
   }
 }
 .menu ul {
@@ -491,12 +497,12 @@ footer .footer a {
   .hamburger-menu #menu__toggle {
     display: none;
   }
-  .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span {
-    transform: rotate(45deg);
-  }
   .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span::before {
     top: 0;
     transform: rotate(0);
+  }
+  .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span {
+    transform: rotate(45deg);
   }
   .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span::after {
     top: 0;
@@ -626,7 +632,11 @@ footer .footer a {
 #reg-course .container .right .form img {
   width: 10px;
 }
-#reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email {
+#reg-course .container .right .form #name,
+#reg-course .container .right .form #surname,
+#reg-course .container .right .form #qa,
+#reg-course .container .right .form #phone,
+#reg-course .container .right .form #email {
   height: 3.5lh;
   width: 100%;
   padding-left: 15px;
@@ -634,10 +644,19 @@ footer .footer a {
   border: none;
   outline: 1px solid lightgray;
 }
-#reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email, #reg-course .container .right .form #agree {
+#reg-course .container .right .form #name,
+#reg-course .container .right .form #surname,
+#reg-course .container .right .form #qa,
+#reg-course .container .right .form #phone,
+#reg-course .container .right .form #email,
+#reg-course .container .right .form #agree {
   margin-bottom: 10px;
 }
-#reg-course .container .right .form #name:focus, #reg-course .container .right .form #surname:focus, #reg-course .container .right .form #qa:focus, #reg-course .container .right .form #phone:focus, #reg-course .container .right .form #email:focus {
+#reg-course .container .right .form #name:focus,
+#reg-course .container .right .form #surname:focus,
+#reg-course .container .right .form #qa:focus,
+#reg-course .container .right .form #phone:focus,
+#reg-course .container .right .form #email:focus {
   outline-color: #6fade9;
 }
 #reg-course .container .right .submit {
@@ -663,7 +682,11 @@ footer .footer a {
   #reg-course .container .right, #reg-course .container .left {
     width: 100%;
   }
-  #reg-course .container .right .form #name, #reg-course .container .right .form #surname, #reg-course .container .right .form #qa, #reg-course .container .right .form #phone, #reg-course .container .right .form #email {
+  #reg-course .container .right .form #name,
+  #reg-course .container .right .form #surname,
+  #reg-course .container .right .form #qa,
+  #reg-course .container .right .form #phone,
+  #reg-course .container .right .form #email {
     width: 90%;
   }
 }
@@ -698,7 +721,11 @@ footer .footer a {
   #reg-course .container .right .form div {
     text-align: center;
   }
-  #reg-course .container .right .form div #name, #reg-course .container .right .form div #surname, #reg-course .container .right .form div #qa, #reg-course .container .right .form div #phone, #reg-course .container .right .form div #email {
+  #reg-course .container .right .form div #name,
+  #reg-course .container .right .form div #surname,
+  #reg-course .container .right .form div #qa,
+  #reg-course .container .right .form div #phone,
+  #reg-course .container .right .form div #email {
     height: 3lh;
     width: 100%;
   }
@@ -890,13 +917,9 @@ footer .footer a {
   #video .container {
     width: 100%;
   }
-  #video .container iframe {
-    width: 100%;
-    height: 500px;
-  }
 }
 /*------------------------------------------------------------------*/
-@media (max-width: 992px) {
+@media (max-width: 1020px) {
   #video .container iframe {
     width: 100%;
     height: 500px;
@@ -904,10 +927,6 @@ footer .footer a {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 768px) {
-  #video {
-    width: 100%;
-    padding: 0;
-  }
   #video .container iframe {
     width: 100%;
     height: 400px;
@@ -915,10 +934,6 @@ footer .footer a {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 500px) {
-  #video {
-    width: 100%;
-    padding: 0;
-  }
   #video .container iframe {
     width: 100%;
     height: 250px;
@@ -926,10 +941,6 @@ footer .footer a {
 }
 /*------------------------------------------------------------------*/
 @media (max-width: 320px) {
-  #video {
-    width: 100%;
-    padding: 0;
-  }
   #video .container iframe {
     width: 100%;
     height: 175px;

@@ -1,4 +1,3 @@
-@import '../global/variables.scss';
 @import '../global/mixins.scss';
 
 #video {
@@ -25,75 +24,43 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1220px) {
-    #video {
-        .container {
-            @include block-display;
-
-            iframe {
-                width: 100%;
-                height: 500px;
-            }
-        }
+    #video .container {
+        @include block-display;
     }
 }
 
 /*------------------------------------------------------------------*/
 
-@media(max-width: 992px) {
-    #video {
-        .container {
-            iframe {
-                width: 100%;
-                height: 500px;
-            }
-        }
+@media(max-width: 1020px) {
+    #video .container iframe {
+        width: 100%;
+        height: 500px;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 768px) {
-    #video {
+    #video .container iframe {
         width: 100%;
-        padding: 0;
-
-        .container {
-            iframe {
-                width: 100%;
-                height: 400px;
-            } 
-        }
-    }
+        height: 400px;
+    } 
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 500px) {
-    #video {
+    #video .container iframe {
         width: 100%;
-        padding: 0;
-
-        .container {
-            iframe {
-                width: 100%;
-                height: 250px;
-            }
-        }
+        height: 250px;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 320px) {
-    #video {
+    #video .container iframe {
         width: 100%;
-        padding: 0;
-
-        .container {
-            iframe {
-                width: 100%;
-                height: 175px;
-            }
-        }
+        height: 175px;
     }
 }

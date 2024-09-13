@@ -1,6 +1,8 @@
 @import '../global/mixins.scss';
 
 #mentors {
+    @include block-display;
+
     .container {
         @include block-content-display;
 
@@ -52,7 +54,7 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    #mentors {
+    #mentors .container {
         @include block-display;
     }
 }
@@ -60,28 +62,24 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 992px) {
-    #mentors {
-        .container {
-            .mentors-slider {
-                height: 625px;
+    #mentors .container .mentors-slider {
+        height: 625px;
         
-                .slick-slide {
-                    .mentors-page {
-                        display: block;
-        
-                        img {
-                            width: 200px;
-                            margin: 0 auto;
-                        }
-        
-                        .name-and-about {
-                            padding-left: 0;
-                            width: 100%;
-        
-                            .about, .name {
-                                text-align: $center-align;
-                            }
-                        }
+        .slick-slide {
+            .mentors-page {
+                display: block;
+
+                img {
+                    width: 200px;
+                    margin: 0 auto;
+                }
+
+                .name-and-about {
+                    padding-left: 0;
+                    width: 100%;
+
+                    .about, .name {
+                        text-align: $center-align;
                     }
                 }
             }
@@ -92,41 +90,35 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 868px) {
-    #mentors {
-        .container {
-            .mentors-slider {
-                height: 630px;
-            }
-        }
+    #mentors .container .mentors-slider {
+        height: 630px;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 768px) {
-    #mentors {
-        .container {
-            @include block-display;
+    #mentors .container {
+        @include block-display;
         
-            .mentors-slider {
-                height: 700px;
-    
-                .slick-slide {
-                    .mentors-page {
-                        display: block;
-    
-                        img {
-                            width: 200px;
-                            margin: 0 auto;
-                        }
-            
-                        .name-and-about {
-                            padding-left: 0;
-                            width: 100%;
-    
-                            .about, .name {
-                                text-align: $center-align;
-                            }
+        .mentors-slider {
+            height: 700px;
+
+            .slick-slide {
+                .mentors-page {
+                    display: block;
+
+                    img {
+                        width: 200px;
+                        margin: 0 auto;
+                    }
+        
+                    .name-and-about {
+                        padding-left: 0;
+                        width: 100%;
+
+                        .about, .name {
+                            text-align: $center-align;
                         }
                     }
                 }
@@ -138,47 +130,31 @@
 /*------------------------------------------------------------------*/
 
 @media(max-width: 525px) {
-    #mentors {
-        .content {
-            .mentors-slider {
-                height: 750px;
-            }
-        }
+    #mentors .container .mentors-slider {
+        height: 800px;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 450px) {
-    #mentors {
-        .content {
-            .mentors-slider {
-                height: 800px;
-            }
-        }
+    #mentors .container .mentors-slider {
+        height: 850px;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 400px) {
-    #mentors {
-        .content {
-            .mentors-slider {
-                height: 850px;
-            }
-        }
+    #mentors .container .mentors-slider {
+        height: 900px;
     }
 }
 
 /*------------------------------------------------------------------*/
 
 @media(max-width: 370px) {
-    #mentors {
-        .content {
-            .mentors-slider {
-                height: 950px;
-            }
-        }
+    #mentors .container .mentors-slider {
+        height: 1000px;
     }
 }
