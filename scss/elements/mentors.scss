@@ -1,5 +1,3 @@
-@import '../global/mixins.scss';
-
 #mentors {
     @include block-display;
 
@@ -46,6 +44,26 @@
                         }
                     }
                 }
+            }
+
+            .slick-dots {
+                button {
+                    display: block;
+                    width: 13px;
+                    height: 13px;
+                    padding: 0;
+                    border: none;
+                    border-radius: 100%;
+                    background-color: $light-gray;
+                    text-indent: -9999px;
+                }
+                
+                li.slick-active button {
+                    background-color: $h2-second-color;
+                    width: 13px;
+                    height: 13px;
+                    margin: 0;
+                }          
             }
         }
     }

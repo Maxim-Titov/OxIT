@@ -1,19 +1,17 @@
-var gulp = require('gulp');
-var rename = require('gulp-rename');
-var sass = require('gulp-sass')(require('sass'));
+const gulp = require('gulp');
+const rename = require('gulp-rename');
+const watch = require('gulp-watch');
+const sass = require('gulp-sass')(require('sass'));
 
-function scss_to_css(done) {
-
-    gulp.src('../scss/style.scss')
-        .pipe( sass({
-            errLogToConsole: true
-        }) )
-        .on('error', console.error.bind(console))
-        .pipe( rename('style.css') )
-        .pipe( gulp.dest('../css/') );
-    
-    done();
-
+function scssToCss() {
+  return gulp.src('../scss/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(rename('style.css'))
+    .pipe(gulp.dest('../css/'));
 }
 
-gulp.task('default', scss_to_css);
+function watchFiles() {
+    gulp.watch('../scss/**/*.scss', scssToCss);
+}
+
+gulp.task('default', gulp.series(scssToCss, watchFiles));

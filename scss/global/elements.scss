@@ -5,6 +5,10 @@ body, html {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     @include block-display;
     overflow-y: scroll;

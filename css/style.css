@@ -298,6 +298,22 @@ header .header img {
   #course .container .about-mob .slick-slide p {
     font-size: 15px;
   }
+  #course .container .about-mob .slick-dots button {
+    display: block;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: lightgray;
+    text-indent: -9999px;
+  }
+  #course .container .about-mob .slick-dots li.slick-active button {
+    background-color: #606060;
+    width: 13px;
+    height: 13px;
+    margin: 0;
+  }
 }
 footer {
   width: 100%;
@@ -370,6 +386,22 @@ footer .footer a {
 }
 #mentors .container .mentors-slider .slick-slide .mentors-page .name-and-about .about {
   text-align: left;
+}
+#mentors .container .mentors-slider .slick-dots button {
+  display: block;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: lightgray;
+  text-indent: -9999px;
+}
+#mentors .container .mentors-slider .slick-dots li.slick-active button {
+  background-color: #606060;
+  width: 13px;
+  height: 13px;
+  margin: 0;
 }
 
 /*------------------------------------------------------------------*/
@@ -571,9 +603,6 @@ footer .footer a {
     padding: 12px 24px;
     text-decoration: none;
     transition-duration: 0.25s;
-  }
-  .hamburger-menu .menu__box .menu__item:hover {
-    background-color: #CFD8DC;
   }
   .hamburger-menu .statement {
     background-color: #3d78b7;
@@ -793,6 +822,22 @@ footer .footer a {
   text-align: center;
   font-size: 17px;
 }
+#testimonials .slider .slick-dots button {
+  display: block;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: lightgray;
+  text-indent: -9999px;
+}
+#testimonials .slider .slick-dots li.slick-active button {
+  background-color: #606060;
+  width: 13px;
+  height: 13px;
+  margin: 0;
+}
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1200px) {
@@ -963,6 +1008,10 @@ body, html {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   overflow-y: scroll;
@@ -1024,5 +1073,3 @@ body .container {
     font-size: 12px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
