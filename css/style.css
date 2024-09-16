@@ -2,15 +2,20 @@ header {
   width: 100%;
   position: fixed;
   background-color: white;
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
 header .header {
   width: 1220px;
   padding: 15px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
   z-index: 100;
 }
@@ -35,8 +40,12 @@ header .header img {
   font-size: 13px;
 }
 .call-to-action .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
 }
 .call-to-action .title {
@@ -153,8 +162,12 @@ header .header img {
   color: white;
 }
 #course-details .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 75px;
   margin: 15px auto;
 }
@@ -224,8 +237,12 @@ header .header img {
   font-weight: 450;
 }
 #course .container .about-desk {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 auto;
 }
 #course .container .about-desk div {
@@ -326,7 +343,7 @@ footer .footer {
   margin: 0 auto;
   margin: 15px auto;
 }
-footer .footer a {
+footer .footer a:first-child {
   color: #7090c4;
   text-decoration: none;
 }
@@ -368,8 +385,12 @@ footer .footer a {
   position: relative;
 }
 #mentors .container .mentors-slider .slick-slide .mentors-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #mentors .container .mentors-slider .slick-slide .mentors-page img {
   height: 100%;
@@ -484,8 +505,12 @@ footer .footer a {
   }
 }
 .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .menu ul li {
   list-style: none;
@@ -524,6 +549,8 @@ footer .footer a {
     display: none;
   }
   .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .hamburger-menu #menu__toggle {
@@ -531,14 +558,17 @@ footer .footer a {
   }
   .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span::before {
     top: 0;
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
   .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
   .hamburger-menu #menu__toggle:checked ~ .button .menu__btn span::after {
     top: 0;
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .hamburger-menu #menu__toggle:checked ~ .menu__box {
     visibility: visible;
@@ -554,8 +584,12 @@ footer .footer a {
     position: absolute;
   }
   .hamburger-menu .button .menu__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     right: 17px;
     top: 8px;
@@ -574,7 +608,8 @@ footer .footer a {
     width: 100%;
     height: 2px;
     background-color: white;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
   }
   .hamburger-menu .button .menu__btn span::before {
     content: "";
@@ -596,13 +631,15 @@ footer .footer a {
     list-style: none;
     text-align: center;
     background-color: white;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
   }
   .hamburger-menu .menu__box .menu__item {
     display: block;
     padding: 12px 24px;
     text-decoration: none;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
   }
   .hamburger-menu .statement {
     background-color: #3d78b7;
@@ -623,8 +660,12 @@ footer .footer a {
   width: 1220px;
   padding: 15px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #reg-course .container .left {
   margin-top: 40px;
@@ -725,7 +766,9 @@ footer .footer a {
     width: 100%;
     padding: 0;
     display: block;
-    justify-content: none;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
   }
   #reg-course .container .right, #reg-course .container .left {
     width: 100%;
@@ -776,7 +819,8 @@ footer .footer a {
 /*-JS---------------------------------------------------------------*/
 .error {
   outline-color: #f06767;
-  box-shadow: inset 0 0 10px 1px #f06767;
+  -webkit-box-shadow: inset 0 0 10px 1px #f06767;
+          box-shadow: inset 0 0 10px 1px #f06767;
   border: none;
 }
 
@@ -794,8 +838,12 @@ footer .footer a {
   position: relative;
 }
 #testimonials .slider .slick-slide .quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 #testimonials .slider .slick-slide .quote p {
   text-align: center;
@@ -1048,7 +1096,8 @@ body .container {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*------------------------------------------------------------------*/

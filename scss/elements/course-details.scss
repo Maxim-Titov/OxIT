@@ -1,3 +1,5 @@
+@import '../global/mixins.scss';
+
 #course-details {
     @include block-display;
 
