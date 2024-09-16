@@ -8,7 +8,7 @@ header {
     box-shadow: 0 -6px 10px 5px rgba($black,0.5);
     z-index: 100;
 
-    .header {
+    .container {
         @include block-content-display;
         @include flex-with-justify(space-between);
 
@@ -25,7 +25,8 @@ header {
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1200px) {
-    header .header {
+    header .container {
         @include block-display;
+        padding: 10px !important;
     }
 }

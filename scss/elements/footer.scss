@@ -6,7 +6,7 @@ footer {
     text-align: $center-align;
     font-size: 15px;
 
-    .footer {
+    .container {
         @include block-content-display;
         
         margin: 15px auto;
@@ -24,7 +24,7 @@ footer {
 /*------------------------------------------------------------------*/
 
 @media(max-width: 1220px) {
-    footer .footer {
+    footer .container {
         @include block-display;
     }
 }

@@ -5,7 +5,7 @@ header {
   box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
-header .header {
+header .container {
   width: 1220px;
   padding: 15px;
   margin: 0 auto;
@@ -14,15 +14,16 @@ header .header {
   margin: 0 auto;
   z-index: 100;
 }
-header .header img {
+header .container img {
   width: 80px;
   height: 80px;
 }
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1200px) {
-  header .header {
+  header .container {
     width: 100%;
+    padding: 10px !important;
   }
 }
 .call-to-action {
@@ -320,24 +321,24 @@ footer {
   text-align: center;
   font-size: 15px;
 }
-footer .footer {
+footer .container {
   width: 1220px;
   padding: 15px;
   margin: 0 auto;
   margin: 15px auto;
 }
-footer .footer .copyright a {
+footer .container .copyright a {
   color: #7090c4;
   text-decoration: none;
 }
-footer .footer .politics a {
+footer .container .politics a {
   color: #606060;
   text-decoration: none;
 }
 
 /*------------------------------------------------------------------*/
 @media (max-width: 1220px) {
-  footer .footer {
+  footer .container {
     width: 100%;
   }
 }

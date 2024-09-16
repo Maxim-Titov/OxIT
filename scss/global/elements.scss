@@ -62,7 +62,6 @@ body {
 @media(max-width: 1220px) {
     body .container {
         @include block-display;
-
         padding: 0;
     }
 }
