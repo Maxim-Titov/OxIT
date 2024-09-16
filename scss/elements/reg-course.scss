@@ -86,10 +86,9 @@
             }
 
             .submit {
-                background-color: $second-main-color;
-                border: none;
-                border-radius: 25px;
-                padding: 15px 100px;
+                @include btn-style(auto, auto, $second-main-color, none, 25px);
+
+                padding: 20px 100px;
                 color: $white;
             }
         }

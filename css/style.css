@@ -500,22 +500,19 @@ footer .footer .politics a {
 .menu ul li a {
   text-decoration: none;
 }
-.menu ul li a:hover {
-  color: #7090c4;
-}
-.menu ul .statement {
+.menu ul li a .statement {
   background-color: #3d78b7;
+  border: none;
   border-radius: 25px;
   width: 150px;
-  height: 2.3lh;
-  padding: 11px;
+  height: 2.5lh;
+  margin: 0 auto;
+  margin: -15px 0;
   text-align: center;
-}
-.menu ul .statement a {
   color: white;
 }
-.menu ul .statement a:hover {
-  color: white;
+.menu ul li a:hover {
+  color: #7090c4;
 }
 
 .hamburger-menu {
@@ -550,11 +547,13 @@ footer .footer .politics a {
   }
   .hamburger-menu .button {
     background-color: #3d78b7;
+    border: none;
+    border-radius: 5px;
     width: 60px;
     height: 40px;
+    margin: 0 auto;
     top: 30px;
     right: 15px;
-    border-radius: 5px;
     position: absolute;
   }
   .hamburger-menu .button .menu__btn {
@@ -608,15 +607,15 @@ footer .footer .politics a {
     text-decoration: none;
     transition-duration: 0.25s;
   }
-  .hamburger-menu .statement {
+  .hamburger-menu .menu__box .menu__item .statement {
     background-color: #3d78b7;
+    border: none;
     border-radius: 25px;
-    padding: 3px 20px;
     width: 250px;
+    height: 50px;
     margin: 0 auto;
-  }
-  .hamburger-menu .statement a {
     color: white;
+    font-size: 16px;
   }
 }
 #reg-course {
@@ -697,7 +696,10 @@ footer .footer .politics a {
   background-color: #3d78b7;
   border: none;
   border-radius: 25px;
-  padding: 15px 100px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 100px;
   color: white;
 }
 #reg-course .container .right, #reg-course .container .left {
@@ -1049,6 +1051,9 @@ body .container {
   width: 1220px;
   padding: 15px;
   margin: 0 auto;
+}
+body button:hover {
+  cursor: pointer;
 }
 
 * {

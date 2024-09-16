@@ -19,3 +19,12 @@
     color: $color;
     text-decoration: $decoration;
 }
+
+@mixin btn-style($width, $height, $bg-color, $border, $border-radius) {
+    background-color: $bg-color;
+    border: $border;
+    border-radius: $border-radius;
+    width: $width;
+    height: $height;
+    margin: 0 auto;
+}

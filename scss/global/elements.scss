@@ -47,6 +47,10 @@ body {
     .container {
         @include block-content-display;
     }
+
+    button:hover {
+        cursor: pointer;
+    }
 }
 
 * {

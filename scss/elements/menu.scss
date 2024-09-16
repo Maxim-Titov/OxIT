@@ -11,27 +11,18 @@
 
         a {
             text-decoration: none;
+
+            .statement {
+                @include btn-style(150px, 2.5lh, $second-main-color, none, 25px);
+
+                margin: -15px 0;
+                text-align: $center-align;
+                color: white;
+            }
         }
 
         a:hover {
             color: $link-color-blue;
-        }
-    }
-
-    .statement {
-        background-color: $second-main-color;
-        border-radius: 25px;
-        width: 150px;
-        height: 2.3lh;
-        padding: 11px;
-        text-align: $center-align;
-
-        a {
-            color: white;
-        }
-
-        a:hover {
-            color: white;
         }
     }
 }
@@ -78,12 +69,10 @@
         }
 
         .button {
-            background-color: $second-main-color;
-            width: 60px;
-            height: 40px;
+            @include btn-style(60px, 40px, $second-main-color, none, 5px);
+
             top: 30px;
             right: 15px;
-            border-radius: 5px;
             position: absolute;
 
             .menu__btn {
@@ -142,18 +131,13 @@
                 padding: 12px 24px;
                 text-decoration: none;
                 transition-duration: .25s;
-            }
-        }
 
-        .statement {
-            background-color: $second-main-color;
-            border-radius: 25px;
-            padding: 3px 20px;
-            width: 250px;
-            margin: 0 auto;
-
-            a {
-                color: white;
+                .statement {
+                    @include btn-style(250px, 50px, $second-main-color, none, 25px);
+            
+                    color: white;
+                    font-size: 16px;
+                }
             }
         }
     }
