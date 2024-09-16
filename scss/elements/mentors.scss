@@ -23,8 +23,7 @@
                 position: relative;
     
                 .mentors-page {
-                    display: flex;
-                    justify-content: $center-align;
+                    @include flex-with-justify($center-align);
     
                     img {
                         height: 100%;

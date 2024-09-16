@@ -11,7 +11,7 @@
     }
 
     .container .about-desk {
-        @include space-between-align;
+        @include flex-with-justify(space-between);
             
         margin: 0 auto;
 

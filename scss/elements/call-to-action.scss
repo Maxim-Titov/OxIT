@@ -5,24 +5,24 @@
 
     background-color: $third-main-color;
     height: 225px;
-    color: white;
+    color: $white;
     padding: 2%;
     margin: 0;
     font-size: 13px;
 
     .content {
-        @include space-between-align;
+        @include flex-with-justify(space-between);
         text-align: $center-align;
-    }
 
-    .title {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-
-    .info {
-        margin-top: 5px;
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+    
+        .info {
+            margin-top: 5px;
+        }
     }
 
     .content-table {
@@ -35,8 +35,7 @@
                 width: 50%;
                 
                 a {
-                    text-decoration: none;
-                    color: $white;
+                    @include a-style($white, none);
 
                     .phone,
                     .email,
@@ -57,8 +56,7 @@
     }
 
     a {
-        text-decoration: none;
-        color: $white;
+        @include a-style($white, none);
     }
 
     .image-block {

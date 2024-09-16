@@ -10,7 +10,12 @@
     margin: 0 auto;
 }
 
-@mixin space-between-align {
+@mixin flex-with-justify ($content) {
     display: flex;
-    justify-content: space-between;
+    justify-content: $content;
+}
+
+@mixin a-style($color, $decoration) {
+    color: $color;
+    text-decoration: $decoration;
 }

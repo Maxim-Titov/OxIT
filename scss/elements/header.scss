@@ -10,7 +10,7 @@ header {
 
     .header {
         @include block-content-display;
-        @include space-between-align;
+        @include flex-with-justify(space-between);
 
         margin: 0 auto;
         z-index: 100;

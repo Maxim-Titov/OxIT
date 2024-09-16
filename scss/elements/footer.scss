@@ -11,9 +11,12 @@ footer {
         
         margin: 15px auto;
 
-        a:first-child {
-            color: $link-color-blue;
-            text-decoration: none;
+        .copyright a {
+            @include a-style($link-color-blue, none);
+        }
+
+        .politics a {
+            @include a-style($h2-second-color, none);
         }
     }
 }

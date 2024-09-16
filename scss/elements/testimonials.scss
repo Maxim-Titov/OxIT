@@ -16,8 +16,7 @@
             position: relative;
 
             .quote {
-                display: flex;
-                justify-content: $center-align;
+                @include flex-with-justify($center-align);
         
                 p {
                     text-align: $center-align;

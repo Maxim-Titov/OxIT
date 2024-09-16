@@ -8,9 +8,9 @@
     color: $white;
 
     .container .content {
-        @include space-between-align;
+        @include flex-with-justify(space-between);
             
-            padding: 75px;
+            padding: 75px 0;
             margin: 15px auto;
 
             div {
